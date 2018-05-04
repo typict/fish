@@ -1280,6 +1280,139 @@ footer {
   background-repeat: no-repeat;
 }
 
+.sport_wrap {
+  background-image: url(../img/popl.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.sport {
+  background: #f7fafe;
+}
+
+.sport .row {
+  background-image: url(../img/fisher_ship.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.sport_map {
+  width: 666px;
+  height: 666px;
+  border-radius: 50%;
+  background: #e2ebf7;
+  background-image: url(../img/map.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 86%;
+  position: relative;
+  float: left;
+}
+
+.map_item {
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  position: absolute;
+  background: #3876e1;
+  -webkit-box-shadow: 0px 0px 1px 12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 1px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 1px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #3876e1;
+}
+
+.map_item:hover {
+  color: #3876e1;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 12px 12px rgba(146, 207, 250, 0.5);
+  -moz-box-shadow: 0px 0px 12px 12px rgba(146, 207, 250, 0.5);
+  box-shadow: 0px 0px 12px 12px rgba(146, 207, 250, 0.5);
+  border: 1px solid #7fc6f9;
+}
+
+.map_name {
+  position: absolute;
+  color: #00a0e3;
+  font-size: 25px;
+  text-transform: uppercase;
+  bottom: 27%;
+  left: 20%;
+}
+
+.map_name img {
+  float: left;
+  margin-right: 10px;
+}
+
+.sport_items {
+  float: left;
+  margin-top: 130px;
+  margin-left: 20px;
+}
+
+.sport_items ol {
+  list-style-type: none;
+  /* Убираем исходные маркеры */
+  counter-reset: item;
+  /* Обнуляем счетчик списка */
+}
+
+.sport_items li {
+  padding-left: 90px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.sport_items li p {
+  font-size: 15px;
+}
+
+.sport_items li a {
+  color: #3876e1;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.sport_items li a:hover {
+  text-decoration: none;
+}
+
+.sport_items li:before {
+  content: counter(item) "";
+  /* Добавляем к числам скобку */
+  counter-increment: item;
+  /* Задаём имя счетчика */
+  display: block;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  position: absolute;
+  background: #3876e1;
+  -webkit-box-shadow: 0px 0px 1px 12px white;
+  -moz-box-shadow: 0px 0px 1px 12px white;
+  box-shadow: 0px 0px 1px 12px white;
+  border: 1px solid #3876e1;
+  left: 0;
+}
+
+.sport_items_title {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: 'Roboto Condensed';
   font-weight: 300;
