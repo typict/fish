@@ -879,16 +879,12 @@ header {
   background-size: cover;
 }
 
-header .row {
-  padding-left: 28px;
-  padding-right: 16px;
-}
-
 header .header--logo {
   display: block;
   max-width: 334px;
   width: 20%;
   float: left;
+  padding-left: 28px;
 }
 
 header .header--logo img {
@@ -1148,11 +1144,21 @@ footer {
 .slick-slide {
   background: #fff;
   text-align: center;
-  padding-bottom: 30px;
   margin: 15px;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.slick-slide:hover {
+  opacity: 0.8;
+}
+
+.slick-slide a {
+  padding-bottom: 30px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .slider_title {
@@ -1411,6 +1417,47 @@ footer {
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+.partner_wrap {
+  max-width: 1920px;
+  margin: auto;
+  background-image: url(../img/partner_l.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.partner {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.partner .title {
+  max-width: 70%;
+  margin: auto;
+}
+
+.partner .row {
+  background-image: url(../img/partner_r.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-size: contain;
+}
+
+.partner_items {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 190px;
+  margin-bottom: 190px;
+}
+
+.partner_item {
+  display: inline-block;
+  margin: 1%;
 }
 
 @font-face {

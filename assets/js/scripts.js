@@ -86,7 +86,7 @@ if (typeof jQuery === 'undefined') {
               $(".slider3").slick({
                       dots: true,
                         infinite: true,
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
                         autoplaySpeed: 1500,
@@ -116,7 +116,7 @@ if (typeof jQuery === 'undefined') {
               $(".slider4").slick({
                       dots: true,
                         infinite: true,
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
                         autoplaySpeed: 1500,
@@ -146,7 +146,7 @@ if (typeof jQuery === 'undefined') {
               $(".slider5").slick({
                       dots: true,
                         infinite: true,
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
                         autoplaySpeed: 1500,
@@ -176,7 +176,7 @@ if (typeof jQuery === 'undefined') {
               $(".slider6").slick({
                       dots: true,
                         infinite: true,
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
                         autoplaySpeed: 1500,
@@ -206,7 +206,7 @@ if (typeof jQuery === 'undefined') {
               $(".slider7").slick({
                       dots: true,
                         infinite: true,
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
                         autoplaySpeed: 1500,
