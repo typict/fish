@@ -436,7 +436,9 @@ button {
   font-weight: bold;
   line-height: 1;
   display: inline-block;
-  padding: .75em 1em;
+  padding: 19px;
+  padding-left: 36px;
+  padding-right: 36px;
   cursor: pointer;
   user-select: none;
   transition: background-color 750ms ease, color 105ms ease, opacity 45ms ease;
@@ -445,7 +447,7 @@ button {
   text-decoration: none;
   color: #fff;
   border: none;
-  border-radius: 20px;
+  border-radius: 26px;
   background-color: #57c9d4;
   -webkit-font-smoothing: antialiased;
 }
@@ -885,6 +887,7 @@ header .header--logo {
   width: 20%;
   float: left;
   padding-left: 28px;
+  padding-top: 34px;
 }
 
 header .header--logo img {
@@ -923,12 +926,12 @@ section {
 
 article {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 138px;
   position: relative;
 }
 
 article .row {
-  padding-left: 176px;
+  padding-left: 9%;
 }
 
 footer {
@@ -945,15 +948,30 @@ footer {
 
 .tabs {
   position: relative;
-  max-width: 70%;
+  max-width: 85%;
   margin: auto;
   margin-top: 24px;
+  min-height: 530px;
+  overflow-y: hidden;
+}
+
+.tabs .button {
+  margin-left: 43px;
+  margin-top: -9px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.tabs .slick-slide {
+  padding-bottom: 32px;
 }
 
 .tabs__content {
   opacity: 0;
   height: 0;
   overflow: hidden;
+  width: 86%;
+  margin-left: 1%;
 }
 
 .tabs__content.active {
@@ -966,9 +984,9 @@ footer {
   float: left;
   border-bottom: 1px solid #dbe3ea;
   width: 80%;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-bottom: 22px;
-  padding-right: 30px;
+  padding-right: 0;
 }
 
 .top_h_adress {
@@ -976,24 +994,29 @@ footer {
 }
 
 .top_h_tel {
-  font-size: 20px;
-  font-weight: bold;
-  color: #1e2d41;
+  font-size: 23px;
+  font-weight: 700;
+  margin-left: 117px;
+  margin-right: 14px;
+  color: #000;
 }
 
 .lang {
   float: right;
+  margin-top: 6px;
+  margin-right: 70px;
 }
 
 .lang a {
   float: left;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center;
   color: #1e2d41;
   display: block;
   padding-top: 10px;
+  margin-left: 10px;
 }
 
 .lang a:hover, .lang a.active {
@@ -1006,6 +1029,8 @@ footer {
   height: 24px;
   background-image: url(../img/user.png);
   float: right;
+  margin-top: 12px;
+  margin-right: 28px;
 }
 
 .user:hover {
@@ -1016,9 +1041,10 @@ footer {
   width: 40px;
   height: 24px;
   background-image: url(../img/cart.png);
-  background-position: center left;
+  background-position: 0;
   float: right;
   background-repeat: no-repeat;
+  margin-top: 12px;
 }
 
 .cart i {
@@ -1037,7 +1063,8 @@ footer {
 .search {
   float: right;
   position: relative;
-  margin-right: 70px;
+  margin-right: 90px;
+  margin-top: 20px;
 }
 
 .search .search_inp {
@@ -1046,6 +1073,8 @@ footer {
   text-align: left;
   text-align: right;
   background: none;
+  font-size: 16px;
+  padding-top: 2px;
 }
 
 .search .search_b {
@@ -1072,6 +1101,8 @@ footer {
   font-size: 178px;
   font-weight: bold;
   text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 
 .left_caps {
@@ -1116,38 +1147,51 @@ footer {
 
 .top_left {
   float: left;
-  width: 40%;
-  padding-left: 116px;
-  padding-right: 80px;
+  width: 46%;
+  padding-left: 9%;
+  margin-top: 26px;
+  padding-right: 5%;
 }
 
 .top_left p {
   float: right;
-  width: 60%;
+  width: 74%;
+  line-height: 23px;
+  font-size: 16px;
 }
 
 .top_right {
-  float: left;
-  width: 60%;
+  float: right;
+  width: 50%;
+  margin-right: 3%;
+}
+
+.top_right .title {
+  margin-left: 12px;
 }
 
 .top_left_title {
   font-size: 35px;
+  margin-top: 24px;
   color: #3876e1;
   font-weight: bold;
   float: right;
-  width: 60%;
-  margin-bottom: 20px;
+  width: 74%;
+  margin-bottom: 34px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 
 .title {
   font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-bottom: 38px;
+  padding-bottom: 26px;
   background-image: url(../img/sea_s.png);
-  background-position: bottom left;
+  background-position: bottom left 2px;
   background-repeat: no-repeat;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 
 .slick-slide {
@@ -1170,10 +1214,19 @@ footer {
   height: 100%;
 }
 
+.slick-slide .button {
+  width: 172px;
+  margin: auto;
+  margin-top: 27px;
+  padding: 12px;
+  text-transform: none;
+}
+
 .slider_title {
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #000;
 }
 
 .slider_price {
@@ -1189,7 +1242,7 @@ footer {
 }
 
 .slider_img {
-  height: 320px;
+  height: 270px;
   text-align: center;
   padding: 20px;
   position: relative;
@@ -1197,7 +1250,7 @@ footer {
 
 .slider_img img {
   margin: 0;
-  width: 90%;
+  width: 80%;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -1256,8 +1309,22 @@ footer {
   background-image: url(../img/arr_r.png);
 }
 
+.slider .slick-prev {
+  left: -45px;
+}
+
+.slider .slick-next {
+  right: -45px;
+}
+
+.slider .slick-dots {
+  bottom: -35px;
+  left: 10px;
+}
+
 .tabs__caption {
   float: left;
+  margin-bottom: 21px;
 }
 
 .tabs__caption li {
@@ -1276,8 +1343,12 @@ footer {
   color: #fff;
 }
 
+.catalog {
+  padding-bottom: 208px;
+}
+
 .catalog .title {
-  max-width: 70%;
+  max-width: 82%;
   margin: auto;
 }
 
@@ -1297,7 +1368,7 @@ footer {
 
 .sport_wrap {
   background-image: url(../img/popl.png);
-  background-position: top left;
+  background-position: top left 44px;
   background-repeat: no-repeat;
   max-width: 1920px;
   margin: auto;
@@ -1305,12 +1376,20 @@ footer {
 
 .sport {
   background: #f7fafe;
+  padding-top: 76px;
+  padding-bottom: 28px;
+}
+
+.sport .title {
+  max-width: 82%;
+  margin: auto;
 }
 
 .sport .row {
   background-image: url(../img/fisher_ship.png);
   background-position: right center;
   background-repeat: no-repeat;
+  padding-top: 42px;
 }
 
 .sport_map {
@@ -1324,6 +1403,8 @@ footer {
   background-size: 86%;
   position: relative;
   float: left;
+  margin: 2%;
+  margin-left: 5%;
 }
 
 .map_item {
@@ -1359,6 +1440,8 @@ footer {
   text-transform: uppercase;
   bottom: 27%;
   left: 20%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 
 .map_name img {
@@ -1368,8 +1451,8 @@ footer {
 
 .sport_items {
   float: left;
-  margin-top: 130px;
-  margin-left: 20px;
+  margin-top: 74px;
+  margin-left: 24px;
 }
 
 .sport_items ol {
@@ -1380,13 +1463,15 @@ footer {
 }
 
 .sport_items li {
-  padding-left: 90px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-left: 75px;
+  margin-top: 44px;
+  margin-bottom: 44px;
 }
 
 .sport_items li p {
   font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .sport_items li a {
@@ -1443,7 +1528,7 @@ footer {
 }
 
 .partner .title {
-  max-width: 70%;
+  max-width: 82%;
   margin: auto;
 }
 
@@ -1460,13 +1545,14 @@ footer {
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin-top: 190px;
-  margin-bottom: 190px;
+  margin-top: 210px;
+  margin-bottom: 206px;
+  padding-right: 12%;
 }
 
 .partner_item {
   display: inline-block;
-  margin: 1%;
+  margin: 2%;
 }
 
 .about {
@@ -1484,7 +1570,7 @@ footer {
 
 .about_wrap {
   background-image: url(../img/sea_m.png);
-  background-position: left 340px center;
+  background-position: left 265px center;
   background-repeat: no-repeat;
   max-width: 1920px;
   margin: auto;
@@ -1497,24 +1583,45 @@ footer {
 }
 
 .about_content {
-  width: 50%;
+  width: 54%;
   float: right;
+  padding-right: 23%;
 }
 
 .about_content p {
-  line-height: 26px;
-  margin-bottom: 10px;
+  line-height: 27px;
+  margin-bottom: 14px;
+}
+
+.rev {
+  padding-bottom: 0;
 }
 
 .rev .title {
-  max-width: 70%;
+  max-width: 82%;
   margin: auto;
+}
+
+.rev .row {
+  background-image: url(../img/ship.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-bottom: 286px;
+}
+
+.rev_wrap {
+  background-image: url(../img/fish_bg.png);
+  background-position: center left;
+  background-repeat: no-repeat;
 }
 
 .slider_rev {
   width: 100%;
-  max-width: 70%;
+  max-width: 73%;
   margin: auto;
+  margin-left: 8%;
+  margin-top: 7%;
+  margin-top: 7.5%;
 }
 
 .slider_rev .slider_img {
@@ -1537,7 +1644,7 @@ footer {
   background-position: right bottom;
   background-repeat: no-repeat;
   text-align: left;
-  padding-left: 24px;
+  padding-left: 18px;
   padding-right: 34px;
   padding-top: 36px;
   margin-right: 26px;
@@ -1556,23 +1663,25 @@ footer {
 
 .slider_rev_price {
   color: #b3b6b9;
+  margin-top: 16px;
+  line-height: 19px;
 }
 
 .slider_rev_content {
   text-align: left;
-  line-height: 20px;
+  line-height: 28px;
   padding-top: 34px;
 }
 
 .footer_menus_item {
-  width: 17%;
+  width: 16%;
   float: left;
-  padding-top: 30px;
+  padding-top: 48px;
 }
 
 .footer_menus_item li {
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
 
 .footer_menus_item li a {
@@ -1589,12 +1698,13 @@ footer {
 }
 
 .footer_menus_item:last-of-type {
-  width: 33%;
+  width: 34%;
+  padding-left: 20px;
 }
 
 .footer_map {
   float: left;
-  width: 33%;
+  width: 34%;
 }
 
 .footer_top {
@@ -1607,10 +1717,9 @@ footer {
   width: 100%;
   float: left;
   border-top: 1px solid #dbe3ea;
-  padding-top: 34px;
-  padding-bottom: 34px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 40px 30px;
+  padding-right: 0;
+  padding-bottom: 0;
 }
 
 .map {
@@ -1625,28 +1734,35 @@ footer {
 }
 
 .rss {
-  width: 70%;
+  width: 73%;
+  margin-top: 14px;
+  float: left;
 }
 
 .rss input {
   border: 1px solid #dbe3ea;
-  border-radius: 20px;
+  border-radius: 30px;
   color: #b3b6b9;
   font-size: 14px;
-  padding: 10px;
-  width: 70%;
+  padding: 15px;
+  width: 64%;
   background: #f7fafe;
   float: left;
 }
 
 .rss button {
-  width: 30%;
+  width: 32%;
   float: left;
+  margin-left: 14px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 footer .adress, footer .mail, footer .tel {
   float: left;
   width: 100%;
+  margin-top: 9px;
+  line-height: 30px;
 }
 
 footer .adress:before, footer .mail:before, footer .tel:before {
@@ -1667,9 +1783,10 @@ footer .adress:hover a, footer .mail:hover a, footer .tel:hover a {
 }
 
 footer .tel a {
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 33px;
 }
 
 footer .tel:hover:before {
@@ -1738,6 +1855,10 @@ footer .adress:before {
 
 .footer_soc .tv:hover {
   background-image: url(../img/tw_h.png);
+}
+
+.footer_cop {
+  float: left;
 }
 
 @font-face {

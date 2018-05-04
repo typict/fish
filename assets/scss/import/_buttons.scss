@@ -8,11 +8,10 @@ button {
   font-size: $base-font-size;
   font-weight: bold;
   line-height: 1;
-
   display: inline-block;
-
-  padding: .75em 1em;
-
+    padding: 19px;
+padding-left: 36px;
+padding-right: 36px;
   cursor: pointer;
   user-select: none;
   transition: $base-transition;
@@ -22,7 +21,7 @@ button {
 
   color: #fff;
   border: none;
-  border-radius: 20px;
+    border-radius: 26px;
   background-color: #57c9d4;
 
   -webkit-font-smoothing: antialiased;

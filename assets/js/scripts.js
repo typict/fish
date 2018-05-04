@@ -28,7 +28,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 3,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -59,7 +59,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -89,7 +89,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -119,7 +119,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -149,7 +149,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -179,7 +179,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -209,7 +209,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 4,
                         slidesToScroll: 1,
                         autoplay: true,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -239,7 +239,7 @@ if (typeof jQuery === 'undefined') {
                         infinite: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        autoplaySpeed: 1500,
+                        autoplaySpeed: 3000,
                         adaptiveHeight: true,
                       responsive: [
                           {
