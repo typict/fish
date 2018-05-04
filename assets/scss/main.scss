@@ -68,20 +68,21 @@ picture {
   height: 100%;
   min-height: 100%;
   margin: 0 auto;
-  background-image: url( ../img/big_fish.jpg);
-  background-position:   right top;
-  background-repeat: no-repeat;
-background-size: contain;
+
 
   @extend .clearfix;
 }
 
 
 header {
-
+    background-image: url( ../img/big_fish.jpg);
+  background-position:   right top;
+  background-repeat: no-repeat;
+background-size: cover;
   .row {
   padding-left: 28px;
   padding-right: 16px;
+
   }
 
   .header--logo {
@@ -122,8 +123,11 @@ section {
 }
 article {
   @extend .clearfix;
-  padding-left: 176px;
+
   position: relative;
+  .row{
+      padding-left: 176px;
+  }
 }
 .looper {
   @extend .clearfix;
@@ -288,10 +292,13 @@ float: right;
 
 
 .top{
-background-image: url(  ../img/sea_s_big.png);
+
+padding-top: 170px;
+.row{
+  background-image: url(  ../img/sea_s_big.png);
 background-position:  left bottom 54px;
 background-repeat: no-repeat;
-padding-top: 170px;
+}
 }
 .top_left{
   float: left;
