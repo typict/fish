@@ -123,7 +123,8 @@ section {
 }
 article {
   @extend .clearfix;
-
+padding-top: 120px;
+padding-bottom: 120px;
   position: relative;
   .row{
       padding-left: 176px;
@@ -283,6 +284,7 @@ float: right;
     height: 15px;
     display: block;
     background-image: url(  ../img/cap.png);
+    background-repeat: no-repeat;
     &:hover,&.active{
        background-image: url(  ../img/cap_h.png);
     }
@@ -292,12 +294,12 @@ float: right;
 
 
 .top{
-
-padding-top: 170px;
-.row{
   background-image: url(  ../img/sea_s_big.png);
 background-position:  left bottom 54px;
 background-repeat: no-repeat;
+padding-top: 170px;
+.row{
+
 }
 }
 .top_left{
@@ -335,34 +337,46 @@ background-repeat: no-repeat;
 }
 
 .slick-slide{
-  background:#fff;
+    background:#fff;
   text-align: center;
 padding-bottom: 30px;
+margin: 15px;
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
 }
 .slider_title{
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
 
+
 }
 
 .slider_price{
   color: #3089cb;
   font-size: 18px;
-  margin-top: 10px;
+  padding-top: 10px;
+
   span{
     color: #000 ;
     font-size: 14px;
-    margin-top: 10px;
+    padding-top: 10px;
   }
 }
 .slider_img{
   height: 320px;
   text-align: center;
   padding: 20px;
+
+    position: relative;
   img{
     margin: 0;
-    width: 100%;
+    width: 90%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+     left: 50%; transform: translate(-50%,0); position: absolute; z-index: 1;
   }
 }
 
@@ -397,7 +411,29 @@ padding-bottom: 30px;
 
 
 }
+.slick-prev, .slick-next{
+    width: 32px;
+  height: 50px;
+  opacity: 1;
+  &:hover{
+    opacity: 0.8;
+  }
 }
+.slick-prev:before, .slick-next:before{
+  content:'';
+  width: 32px;
+  height: 50px;
+  background-image: url(../img/arr_l.png);
+display: block;
+opacity: 1;
+}
+ .slick-next:before{
+  background-image: url(../img/arr_r.png);
+ }
+}
+
+
+
 
 .tabs__caption{
   float: left;

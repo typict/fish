@@ -23,10 +23,12 @@ if (typeof jQuery === 'undefined') {
 // Place any jQuery/helper plugins in here.
             $(document).ready(function(){
               $(".slider1").slick({
-                      dots: true,
+                        dots: true,
+                        infinite: true,
                         slidesToShow: 3,
-                       autoplay: false,
-                       autoplaySpeed: 1500,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -55,6 +57,7 @@ if (typeof jQuery === 'undefined') {
                       dots: true,
                         slidesToShow: 4,
                        autoplay: true,
+                       arrows: true,
                        autoplaySpeed: 1500,
                       responsive: [
                           {
