@@ -301,8 +301,10 @@ background-repeat: no-repeat;
 }
 }
 .top_left{
-  float: left;
-  width: 40%;
+    float: left;
+    width: 40%;
+    padding-left: 116px;
+    padding-right: 80px;
   p{
     float: right;
     width: 60%;

@@ -1109,6 +1109,8 @@ footer {
 .top_left {
   float: left;
   width: 40%;
+  padding-left: 116px;
+  padding-right: 80px;
 }
 
 .top_left p {
