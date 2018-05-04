@@ -913,6 +913,10 @@ nav ul li a:hover, nav ul li a.active {
   color: #3876e1;
 }
 
+nav ul li.active a {
+  color: #3876e1;
+}
+
 section {
   padding: 0 0 392px;
 }
@@ -930,6 +934,7 @@ article .row {
 footer {
   height: 392px;
   margin: -392px auto 0;
+  background: #f7fafe;
 }
 
 .row {
@@ -1086,6 +1091,10 @@ footer {
   margin-bottom: 10px;
 }
 
+.left_caps li.active a {
+  background-image: url(../img/cap_h.png);
+}
+
 .left_caps a {
   width: 11px;
   height: 15px;
@@ -1094,7 +1103,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-.left_caps a:hover, .left_caps a.active {
+.left_caps a:hover {
   background-image: url(../img/cap_h.png);
 }
 
@@ -1552,6 +1561,183 @@ footer {
 .slider_rev_content {
   text-align: left;
   line-height: 20px;
+  padding-top: 34px;
+}
+
+.footer_menus_item {
+  width: 17%;
+  float: left;
+  padding-top: 30px;
+}
+
+.footer_menus_item li {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.footer_menus_item li a {
+  color: #1e2d41;
+  font-size: 14px;
+}
+
+.footer_menus_item li a:hover {
+  color: #3876e1;
+}
+
+.footer_menus_item li.active a {
+  color: #3876e1;
+}
+
+.footer_menus_item:last-of-type {
+  width: 33%;
+}
+
+.footer_map {
+  float: left;
+  width: 33%;
+}
+
+.footer_top {
+  width: 100%;
+  float: left;
+  padding-left: 30px;
+}
+
+.footer_bottom {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #dbe3ea;
+  padding-top: 34px;
+  padding-bottom: 34px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.map {
+  height: 300px;
+}
+
+.footer_menu_title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3876e1;
+}
+
+.rss {
+  width: 70%;
+}
+
+.rss input {
+  border: 1px solid #dbe3ea;
+  border-radius: 20px;
+  color: #b3b6b9;
+  font-size: 14px;
+  padding: 10px;
+  width: 70%;
+  background: #f7fafe;
+  float: left;
+}
+
+.rss button {
+  width: 30%;
+  float: left;
+}
+
+footer .adress, footer .mail, footer .tel {
+  float: left;
+  width: 100%;
+}
+
+footer .adress:before, footer .mail:before, footer .tel:before {
+  width: 29px;
+  height: 29px;
+  content: '';
+  display: block;
+  background-image: url(../img/tel.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  margin-right: 10px;
+}
+
+footer .adress:hover a, footer .mail:hover a, footer .tel:hover a {
+  color: #3876e1;
+}
+
+footer .tel a {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+footer .tel:hover:before {
+  content: '';
+  background-image: url(../img/tel_h.png);
+}
+
+footer .mail a {
+  color: #000;
+}
+
+footer .mail a:hover {
+  color: #3876e1;
+}
+
+footer .mail:before {
+  content: '';
+  background-image: url(../img/mail.png);
+}
+
+footer .mail:hover:before {
+  content: '';
+  background-image: url(../img/mail_h.png);
+}
+
+footer .adress:before {
+  content: '';
+  background-image: url(../img/adr.png);
+}
+
+.footer_soc {
+  float: right;
+}
+
+.footer_soc .fb, .footer_soc .in, .footer_soc .tv {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.footer_soc .fb {
+  background-image: url(../img/fb.png);
+}
+
+.footer_soc .fb:hover {
+  background-image: url(../img/fb_h.png);
+}
+
+.footer_soc .in {
+  background-image: url(../img/in.png);
+}
+
+.footer_soc .in:hover {
+  background-image: url(../img/in_h.png);
+}
+
+.footer_soc .tv {
+  background-image: url(../img/tw.png);
+}
+
+.footer_soc .tv:hover {
+  background-image: url(../img/tw_h.png);
 }
 
 @font-face {

@@ -113,6 +113,11 @@ nav {
           color: #3876e1;
         }
       }
+      &.active{
+        a{
+          color: #3876e1;
+        }
+        }
     }
   }
 }
@@ -137,6 +142,7 @@ padding-bottom: 120px;
 footer {
   height: $footer;
   margin: $footer_margin auto 0;
+  background: #f7fafe;
 }
 
 .row{
@@ -280,6 +286,11 @@ float: right;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
+    &.active{
+      a{
+       background-image: url(  ../img/cap_h.png);
+    }
+    }
   }
   a{
     width: 11px;
@@ -287,9 +298,10 @@ float: right;
     display: block;
     background-image: url(  ../img/cap.png);
     background-repeat: no-repeat;
-    &:hover,&.active{
+    &:hover{
        background-image: url(  ../img/cap_h.png);
     }
+
   }
 }
 
@@ -731,6 +743,183 @@ margin-right: 26px;
 .slider_rev_content{
   text-align: left;
   line-height: 20px;
+  padding-top: 34px;
+}
+
+
+.footer_menus_item{
+  width: 17%;
+  float: left;
+padding-top: 30px;
+li{
+  margin-top: 14px;
+  margin-bottom: 14px;
+  a{
+   color: #1e2d41;
+  font-size: 14px;
+  &:hover{
+    color: #3876e1;
+  }
+  }
+  &.active{
+    a{
+      color: #3876e1;
+    }
+  }
+}
+}
+.footer_menus_item:last-of-type{
+  width: 33%;
+}
+.footer_map{
+  float: left;
+  width: 33%;
+}
+.footer_top{
+  width: 100%;
+  float: left;
+padding-left: 30px;
+}
+.footer_bottom{
+  width: 100%;
+float: left;
+border-top:1px solid #dbe3ea;
+padding-top: 34px;
+padding-bottom: 34px;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.map{
+  height: 300px;
+}
+.footer_menu_title{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3876e1;
+}
+
+.rss{
+  width: 70%;
+  input{
+    border:1px solid #dbe3ea;
+    border-radius:20px;
+    color: #b3b6b9;
+    font-size: 14px;
+    padding: 10px;
+    width: 70%;
+    background: #f7fafe;
+    float: left;
+
+  }
+  button{
+    width: 30%;
+    float: left;
+
+  }
+}
+footer{
+
+  .adress, .mail, .tel{
+    float: left;
+    width: 100%;
+    &:before{
+      width: 29px;
+      height: 29px;
+      content:'';
+      display: block;
+      background-image: url(../img/tel.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      float: left;
+      margin-right: 10px;
+    }
+   &:hover{
+      a{
+        color: #3876e1;
+      }
+    }
+  }
+
+
+  .tel{
+    a{
+      font-size: 16px;
+    color: #000;
+    font-weight: bold;
+
+    }
+    &:hover{
+      &:before{
+        content:'';
+        background-image: url(../img/tel_h.png);
+      }
+    }
+  }
+  .mail{
+    a{
+      color: #000;
+      &:hover{
+      color: #3876e1;
+    }
+    }
+    &:before{
+        content:'';
+        background-image: url(../img/mail.png);
+
+      }
+      &:hover{
+      &:before{
+        content:'';
+        background-image: url(../img/mail_h.png);
+      }
+    }
+  }
+  .adress{
+    &:before{
+        content:'';
+        background-image: url(../img/adr.png);
+
+      }
+
+  }
+
+
+}
+
+.footer_soc{
+  float: right;
+  .fb,.in,.tv{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      float: right;
+      margin-left: 14px;
+      margin-right: 14px;
+  }
+  .fb{
+  background-image: url(../img/fb.png);
+  &:hover{
+    background-image: url(../img/fb_h.png);
+  }
+  }
+  .in{
+  background-image: url(../img/in.png);
+  &:hover{
+    background-image: url(../img/in_h.png);
+  }
+  }
+  .tv{
+  background-image: url(../img/tw.png);
+  &:hover{
+    background-image: url(../img/tw_h.png);
+  }
+  }
 }
 
 
