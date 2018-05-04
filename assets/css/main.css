@@ -944,6 +944,9 @@ footer {
 
 .tabs {
   position: relative;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 24px;
 }
 
 .tabs__content {
@@ -1258,15 +1261,22 @@ footer {
   color: #fff;
 }
 
+.catalog .title {
+  max-width: 70%;
+  margin: auto;
+}
+
 .catalog .row {
-  background-image: url(../img/limon.png);
-  background-position: center left;
+  background-image: url(../img/flover.png);
+  background-position: bottom 94px right 10px;
   background-repeat: no-repeat;
 }
 
-.catalog_wrap .row {
-  background-image: url(../img/flover.png);
-  background-position: bottom 94px right 10px;
+.catalog_wrap {
+  max-width: 1920px;
+  margin: auto;
+  background-image: url(../img/limon.png);
+  background-position: center left;
   background-repeat: no-repeat;
 }
 

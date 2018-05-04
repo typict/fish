@@ -55,10 +55,11 @@ if (typeof jQuery === 'undefined') {
             $(document).ready(function(){
               $(".slider2").slick({
                       dots: true,
+                        infinite: true,
                         slidesToShow: 4,
-                       autoplay: true,
-                       arrows: true,
-                       autoplaySpeed: 1500,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -84,9 +85,11 @@ if (typeof jQuery === 'undefined') {
             $(document).ready(function(){
               $(".slider3").slick({
                       dots: true,
-                        slidesToShow: 4,
-                       autoplay: true,
-                       autoplaySpeed: 1500,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -112,9 +115,11 @@ if (typeof jQuery === 'undefined') {
             $(document).ready(function(){
               $(".slider4").slick({
                       dots: true,
-                        slidesToShow: 4,
-                       autoplay: true,
-                       autoplaySpeed: 1500,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -140,9 +145,11 @@ if (typeof jQuery === 'undefined') {
             $(document).ready(function(){
               $(".slider5").slick({
                       dots: true,
-                        slidesToShow: 4,
-                       autoplay: true,
-                       autoplaySpeed: 1500,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -168,9 +175,11 @@ if (typeof jQuery === 'undefined') {
             $(document).ready(function(){
               $(".slider6").slick({
                       dots: true,
-                        slidesToShow: 4,
-                       autoplay: true,
-                       autoplaySpeed: 1500,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -196,9 +205,11 @@ if (typeof jQuery === 'undefined') {
             $(document).ready(function(){
               $(".slider7").slick({
                       dots: true,
-                        slidesToShow: 4,
-                       autoplay: true,
-                       autoplaySpeed: 1500,
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,
@@ -225,9 +236,11 @@ if (typeof jQuery === 'undefined') {
             $(document).ready(function(){
               $(".slider_rev").slick({
                       dots: true,
+                        infinite: true,
                         slidesToShow: 1,
-                       autoplay: true,
-                       autoplaySpeed: 1500,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
                       responsive: [
                           {
                           breakpoint: 1600,

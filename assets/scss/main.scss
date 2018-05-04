@@ -147,6 +147,9 @@ footer {
 }
 .tabs{
   position: relative;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 24px;
 }
 .tabs__content {
 opacity: 0;
@@ -455,15 +458,25 @@ opacity: 1;
     }
 }
 
-.catalog .row{
- background-image: url(  ../img/limon.png);
-  background-position:  center left;
-  background-repeat: no-repeat;
-}
-.catalog_wrap .row{
- background-image: url(  ../img/flover.png);
+.catalog{
+  .title{
+    max-width: 70%;
+    margin: auto;
+
+  }
+ .row{
+   background-image: url(../img/flover.png);
   background-position:  bottom 94px right 10px;
    background-repeat: no-repeat;
+}
+}
+.catalog_wrap{
+  max-width: 1920px;
+  margin: auto;
+
+    background-image: url(../img/limon.png);
+  background-position:  center left;
+  background-repeat: no-repeat;
 }
 
 @import "fonts/font_roboto";
