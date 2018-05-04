@@ -646,6 +646,39 @@ margin-bottom: 190px;
    margin: 1%;
 }
 
+
+.about{
+  background: #f7fafe;
+  padding: 0;
+ .row{
+        background-image: url(../img/sea_s_big.png);
+    background-position: left bottom 54px;
+    background-repeat: no-repeat;
+    padding-top: 230px;
+    padding-bottom: 230px;
+ }
+}
+.about_wrap{
+      background-image: url(../img/sea_m.png);
+    background-position: left 340px center ;
+    background-repeat: no-repeat;
+        max-width: 1920px;
+  margin: auto;
+}
+.about_wrap_dop{
+          background-image: url(../img/kompas.png);
+    background-position: right bottom 50px;
+    background-repeat: no-repeat;
+}
+.about_content{
+  width: 50%;
+  float: right;
+p{
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+}
+
 @import "fonts/font_roboto";
 @import "import/base64";
 @import "import/print";
