@@ -239,8 +239,8 @@ if (typeof jQuery === 'undefined') {
                         infinite: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        autoplay: true,
                         autoplaySpeed: 1500,
+                        adaptiveHeight: true,
                       responsive: [
                           {
                           breakpoint: 1600,
