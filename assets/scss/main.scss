@@ -75,12 +75,13 @@ picture {
 
 
 header {
-    background-image: url( ../img/big_fish.jpg);
-  background-position:   right top;
-  background-repeat: no-repeat;
-background-size: cover;
-  .row {
+  background: #f7fafe;
 
+
+  .row {
+    background-image: url( ../img/bigfish_bg.png);
+  background-position:   bottom 10px right;
+  background-repeat: no-repeat;
   }
 
   .header--logo {
@@ -152,11 +153,12 @@ footer {
 }
 .tabs{
   position: relative;
-    max-width: 85%;
-  margin: auto;
-  margin-top: 24px;
-  min-height: 530px;
-  overflow-y: hidden;
+max-width: 89%;
+    margin-top: 24px;
+    min-height: 530px;
+    overflow-y: hidden;
+    padding-top: 10px;
+    padding-left: 30px;
   .button{
     margin-left: 43px;
     margin-top: -9px;
@@ -171,8 +173,8 @@ footer {
 opacity: 0;
 height: 0;
 overflow: hidden;
-width: 86%;
-    margin-left: 1%;
+width: 84%;
+margin-left: 7%;
 }
 .tabs__content.active {
 opacity: 1;
@@ -516,8 +518,9 @@ opacity: 1;
 
 
 .tabs__caption{
-    float: left;
+float: left;
     margin-bottom: 21px;
+    margin-left: 102px;
     li{
       float: left;
       font-size: 16px;
@@ -537,7 +540,7 @@ opacity: 1;
 }
 
 .catalog{
-  padding-bottom: 208px;
+padding-bottom: 0;
   .title{
     max-width: 82%;
     margin: auto;
@@ -546,6 +549,7 @@ opacity: 1;
    background-image: url(../img/flover.png);
   background-position:  bottom 94px right 10px;
    background-repeat: no-repeat;
+     padding-bottom: 208px;
 }
 }
 .catalog_wrap{
@@ -576,7 +580,7 @@ opacity: 1;
 
   .row{
       background-image: url(../img/fisher_ship.png);
-      background-position:  right center;
+      background-position:  right bottom;
       background-repeat: no-repeat;
           padding-top: 42px;
   }
@@ -743,14 +747,14 @@ max-width: 82%;
 }
 .about_wrap{
       background-image: url(../img/sea_m.png);
-    background-position: left 265px center ;
+    background-position: left 265px bottom 89%; ;
     background-repeat: no-repeat;
         max-width: 1920px;
   margin: auto;
 }
 .about_wrap_dop{
           background-image: url(../img/kompas.png);
-    background-position: right bottom 50px;
+    background-position: right 3% bottom 50px;
     background-repeat: no-repeat;
 }
 .about_content{
@@ -771,13 +775,15 @@ padding-bottom: 0;
   }
   .row{
   background-image: url(../img/ship.png);
-      background-position: top right;
+     background-position: top right 5%;
       background-repeat: no-repeat;
 
        padding-bottom: 286px;
   }
 }
 .rev_wrap{
+  max-width:1920px;
+  margin: auto;
   background-image: url(../img/fish_bg.png);
       background-position: center left;
       background-repeat: no-repeat;
@@ -922,22 +928,25 @@ footer{
     width: 100%;
     margin-top: 9px;
     line-height: 30px;
-    &:before{
-      width: 29px;
-      height: 29px;
-      content:'';
-      display: block;
-      background-image: url(../img/tel.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      float: left;
-      margin-right: 10px;
-    }
+    // &:before{
+    //   width: 29px;
+    //   height: 29px;
+    //   content:'';
+    //   display: block;
+    //   background-image: url(../img/tel.png);
+    //   background-position: center center;
+    //   background-repeat: no-repeat;
+
+    //   float: left;
+    //   margin-right: 10px;
+    // }
    &:hover{
       a{
         color: #3876e1;
       }
+    }
+    i{
+      margin-right: 10px;
     }
   }
 
@@ -964,11 +973,11 @@ footer{
       color: #3876e1;
     }
     }
-    &:before{
-        content:'';
-        background-image: url(../img/mail.png);
+    // &:before{
+    //     content:'';
+    //     background-image: url(../img/mail.png);
 
-      }
+    //   }
       &:hover{
       &:before{
         content:'';
@@ -989,6 +998,7 @@ footer{
 }
 
 .footer_soc{
+  color: #b3b6b9;
   float: right;
   .fb,.in,.tv{
     width: 20px;
@@ -1023,7 +1033,7 @@ footer{
 
 .footer_cop{
       float: left;
-
+color: #b3b6b9;
 }
 
 
