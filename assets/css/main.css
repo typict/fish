@@ -1963,4 +1963,10 @@ footer .adress:before {
   }
 }
 
+@media (max-width: 1910px) {
+  header .header--logo {
+    width: 10%;
+  }
+}
+
 /*# sourceMappingURL=maps/main.css.map */

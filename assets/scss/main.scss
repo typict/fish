@@ -1043,6 +1043,8 @@ color: #b3b6b9;
 @import "import/print";
 
 
-@media(max-width:1922px) {
-
+@media(max-width:1910px) {
+header .header--logo {
+    width: 10%;
+}
 }
