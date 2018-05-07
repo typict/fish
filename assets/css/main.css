@@ -933,10 +933,6 @@ article {
   position: relative;
 }
 
-article .row {
-  padding-left: 9%;
-}
-
 footer {
   height: 392px;
   margin: -392px auto 0;
@@ -1558,16 +1554,17 @@ footer {
 }
 
 .partner_items {
-  display: inline-block;
   text-align: center;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   margin-top: 210px;
   margin-bottom: 206px;
+  float: none;
 }
 
 .partner_items .slider {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .partner_items .slider .slick-next, .partner_items .slider .slick-prev {
@@ -1576,11 +1573,11 @@ footer {
 }
 
 .partner_items .slider .slick-next {
-  right: 0;
+  right: -5%;
 }
 
 .partner_items .slider .slick-prev {
-  left: 0;
+  left: -5%;
 }
 
 .partner_item {

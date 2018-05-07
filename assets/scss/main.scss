@@ -131,9 +131,7 @@ article {
 padding-top: 120px;
 padding-bottom: 138px;
   position: relative;
-  .row{
-     padding-left: 9%;
-  }
+
 }
 .looper {
   @extend .clearfix;
@@ -727,25 +725,27 @@ max-width: 82%;
   }
 }
 .partner_items{
-    display: inline-block;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     margin-top: 210px;
     margin-bottom: 206px;
+    float: none;
+
 
     .slider{
-      padding-left: 20%;
-    padding-right: 20%;
+      padding-left: 10%;
+    padding-right: 10%;
     }
     .slider .slick-next, .slider .slick-prev{
       height: 150%;
       width: 20%;
     }
     .slider .slick-next{
-      right: 0;
+      right: -5%;
     }
     .slider .slick-prev{
-      left: 0;
+      left: -5%;
     }
 }
 .partner_item{
