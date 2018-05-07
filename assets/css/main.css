@@ -1668,6 +1668,10 @@ footer {
   width: 20%;
 }
 
+.partner_items .slider .slick-next:before, .partner_items .slider .slick-prev:before {
+  display: none;
+}
+
 .partner_items .slider .slick-next {
   right: -5%;
 }
@@ -2126,7 +2130,10 @@ footer .adress:before {
     background-position: left bottom 10px;
   }
   .tabs {
-    max-width: 100%;
+    max-width: 90%;
+    margin: auto;
+    padding: 0;
+    padding-top: 4%;
   }
 }
 
@@ -2303,6 +2310,9 @@ footer .adress:before {
   .top_h_tel {
     margin-left: 20px;
   }
+  .tel_top_w {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2314,29 +2324,125 @@ footer .adress:before {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .lang {
+    margin-right: 20px;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
+  .search {
+    margin-right: 50px;
+  }
+  .sport_items {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+  .sport_map {
+    float: none;
+    margin: auto;
+  }
+  .sport .row {
+    background: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .top_h {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header .header--logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    top: 120px;
+    text-align: center;
+    width: auto;
+  }
+  nav {
+    margin-top: 130px;
+    margin-left: 10px;
+  }
+  .search {
+    margin-top: 154px;
+  }
+  .rev {
+    padding-top: 0;
+  }
+  .rev .row {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .slider_rev {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 1000px) {
+  .top_left_title,
+  .top_left p {
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer_menus_item:last-of-type {
+    padding-left: 0;
+  }
+  .tabs__caption {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+  }
+  .tabs__caption li {
+    display: inline-block;
+    float: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider_rev {
+    max-width: 80%;
+  }
+  .slider_rev_content {
+    width: 100%;
+    float: left;
+  }
+  .about_wrap {
+    background: none;
+  }
+  .about_content {
+    width: 80%;
+    margin: auto;
+    float: none;
+  }
+  .top_h .button {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .tel_top_w {
+    margin-right: 0;
+  }
   .sea_botton {
     display: block;
     position: absolute;
-    right: 74px;
+    left: 10px;
+    top: 10px;
     font-size: 16px;
     line-height: 30px;
-    width: auto;
-    height: 50px;
-    font-weight: 700;
-    font-family: "Roboto Condensed", sans-serif;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/menu.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 2;
   }
   .sea_botton:hover, .sea_botton:focus {
     color: #ec8000;
-  }
-  .sea_botton i {
-    font-size: 24px;
-    margin-top: 4px;
-    float: left;
-    margin-left: 10px;
-    margin-right: 20px;
   }
   .sea_w {
     height: auto;
@@ -2348,13 +2454,165 @@ footer .adress:before {
   }
   .header--nav {
     margin-top: 0;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
+    position: absolute;
+    background: #e9f1fc;
+    top: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .header--nav li {
     width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .button {
+    background: #3876e1;
+  }
+  .top_h {
+    height: 260px;
+    position: relative;
+    padding-top: 0;
+  }
+  .top_h .button {
+    position: absolute;
+    bottom: 20px;
+    background: #3876e1;
+    width: 300px;
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
     text-align: center;
+  }
+  .tel_top_w {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 60px;
+    text-align: center;
+    width: 200px;
+  }
+  .tel_pop_o {
+    float: none;
+    right: -30px;
+    position: absolute;
+  }
+  .tel_pop {
+    z-index: 2;
+  }
+  header .header--logo {
+    top: 60px;
+    max-width: 80px;
+  }
+  .search {
+    display: none;
+  }
+  .top_h_adress {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    bottom: 90px;
+  }
+  .cart, .user {
+    position: absolute;
+    margin: 0;
+    top: 16px;
+  }
+  .cart {
+    left: 52%;
+  }
+  .user {
+    right: 52%;
+  }
+  .lang {
+    margin-right: 0;
+  }
+  .title_big {
+    font-size: 72px;
+  }
+  .top_left,
+  .top_right {
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .top_left .slider,
+  .top_right .slider {
+    width: 80%;
+    margin: auto;
+  }
+  .left_caps {
+    display: none;
+  }
+  .top_left_title {
+    font-size: 18px;
+  }
+  header .row {
+    background: none;
+  }
+  .top_right .title {
+    margin-left: 0;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .tabs .button {
+    width: 300px;
+    text-align: center;
+    float: none;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    clear: both;
+  }
+  .slick-slide .button {
+    width: auto;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .footer_cop, .footer_soc {
+    width: 50%;
+  }
+  .footer_dev {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer_map, .footer_menus_item, .footer_menus_item:last-of-type {
+    width: 100%;
+  }
+  .footer_top {
+    padding: 0;
+  }
+  .map {
+    height: 230px;
+  }
+  .footer_menus_item,
+  .footer_menus_item:last-of-type {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .tabs__caption {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .sport_map {
+    width: 300px;
+    height: 300px;
   }
 }
 

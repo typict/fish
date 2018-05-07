@@ -31,19 +31,13 @@ if (typeof jQuery === 'undefined') {
                         autoplaySpeed: 3000,
                       responsive: [
                           {
-                          breakpoint: 1600,
+                          breakpoint: 700,
                           settings: {
-
+                            slidesToShow: 2
                           }
                         },
                         {
                           breakpoint: 800,
-                          settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
                           settings: {
 
                           }
@@ -68,15 +62,9 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 800,
+                          breakpoint: 700,
                           settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
@@ -92,21 +80,15 @@ if (typeof jQuery === 'undefined') {
                         autoplaySpeed: 3000,
                       responsive: [
                           {
-                          breakpoint: 1600,
+                          breakpoint: 1300,
                           settings: {
-
+                            slidesToShow: 3
                           }
                         },
                         {
-                          breakpoint: 800,
+                          breakpoint: 700,
                           settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
@@ -122,21 +104,15 @@ if (typeof jQuery === 'undefined') {
                         autoplaySpeed: 3000,
                       responsive: [
                           {
-                          breakpoint: 1600,
+                          breakpoint: 1300,
                           settings: {
-
+                            slidesToShow: 3
                           }
                         },
                         {
-                          breakpoint: 800,
+                          breakpoint: 700,
                           settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
@@ -152,21 +128,15 @@ if (typeof jQuery === 'undefined') {
                         autoplaySpeed: 3000,
                       responsive: [
                           {
-                          breakpoint: 1600,
+                          breakpoint: 1300,
                           settings: {
-
+                            slidesToShow: 3
                           }
                         },
                         {
-                          breakpoint: 800,
+                          breakpoint: 700,
                           settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
@@ -182,21 +152,15 @@ if (typeof jQuery === 'undefined') {
                         autoplaySpeed: 3000,
                       responsive: [
                           {
-                          breakpoint: 1600,
+                          breakpoint: 1300,
                           settings: {
-
+                            slidesToShow: 3
                           }
                         },
                         {
-                          breakpoint: 800,
+                          breakpoint: 700,
                           settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
@@ -212,21 +176,15 @@ if (typeof jQuery === 'undefined') {
                         autoplaySpeed: 3000,
                       responsive: [
                           {
-                          breakpoint: 1600,
+                          breakpoint: 1300,
                           settings: {
-
+                            slidesToShow: 3
                           }
                         },
                         {
-                          breakpoint: 800,
+                          breakpoint: 700,
                           settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
@@ -253,12 +211,6 @@ if (typeof jQuery === 'undefined') {
                           settings: {
 
                           }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
-                          }
                         }
                       ]
                     });
@@ -274,21 +226,15 @@ if (typeof jQuery === 'undefined') {
                         adaptiveHeight: true,
                       responsive: [
                           {
-                          breakpoint: 1600,
+                          breakpoint: 1000,
                           settings: {
-
+                            slidesToShow: 3
                           }
                         },
                         {
-                          breakpoint: 800,
+                          breakpoint: 700,
                           settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 500,
-                          settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
