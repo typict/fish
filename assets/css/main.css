@@ -995,14 +995,63 @@ footer {
   margin-top: 20px;
 }
 
+.tel_top_w {
+  position: relative;
+  margin-left: 90px;
+  margin-right: 14px;
+  float: left;
+}
+
 .top_h_tel {
   font-size: 23px;
   font-weight: 700;
-  margin-left: 117px;
-  margin-right: 14px;
-  color: #1e2d41;
   float: left;
+  margin-right: 6px;
+  color: #1e2d41;
   margin-top: 14px;
+}
+
+.tel_pop_o {
+  width: 17px;
+  height: 9px;
+  display: block;
+  background-image: url(../img/bot_tel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  cursor: pointer;
+  margin-top: 23px;
+  margin-right: 20px;
+}
+
+.tel_pop_o:hover {
+  opacity: 0.8;
+}
+
+.tel_pop {
+  position: absolute;
+  top: 40px;
+  display: none;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+  background: #fff;
+  width: 154px;
+  text-align: center;
+  right: 20px;
+}
+
+.tel_pop.open {
+  display: block;
+}
+
+.tel_pop a {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  float: left;
+  width: 100%;
+  margin-right: 0px;
+  color: #1e2d41;
 }
 
 .lang {
