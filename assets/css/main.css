@@ -1310,13 +1310,13 @@ footer {
   content: '';
   width: 32px;
   height: 50px;
-  background-image: url(../img/arr_l.svg);
+  background-image: url(../img/arr_l.png);
   display: block;
   opacity: 1;
 }
 
 .slider .slick-next:before {
-  background-image: url(../img/arr_r.svg);
+  background-image: url(../img/arr_r.png);
 }
 
 .slider .slick-prev {
