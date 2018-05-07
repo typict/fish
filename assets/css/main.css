@@ -1563,12 +1563,29 @@ footer {
   width: 100%;
   margin-top: 210px;
   margin-bottom: 206px;
-  padding-right: 12%;
+}
+
+.partner_items .slider {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.partner_items .slider .slick-next, .partner_items .slider .slick-prev {
+  height: 150%;
+  width: 20%;
+}
+
+.partner_items .slider .slick-next {
+  right: 0;
+}
+
+.partner_items .slider .slick-prev {
+  left: 0;
 }
 
 .partner_item {
-  display: inline-block;
-  margin: 2%;
+  box-shadow: none;
+  background: none;
 }
 
 .about {
@@ -2022,9 +2039,6 @@ footer .adress:before {
     padding-right: 15px;
   }
   .partner_items {
-    padding: 0;
-    margin: auto;
-    width: 90%;
     margin-top: 10%;
     margin-bottom: 10%;
   }
@@ -2072,10 +2086,6 @@ footer .adress:before {
   .catalog .row {
     padding-top: 10%;
     padding-bottom: 10%;
-  }
-  .partner_items {
-    width: 70%;
-    display: block;
   }
   .partner .row {
     padding: 0;

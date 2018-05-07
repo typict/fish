@@ -264,6 +264,37 @@ if (typeof jQuery === 'undefined') {
                     });
               });
 
+            $(document).ready(function(){
+              $(".slider_partner").slick({
+
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        autoplaySpeed: 3000,
+                        adaptiveHeight: true,
+                      responsive: [
+                          {
+                          breakpoint: 1600,
+                          settings: {
+
+                          }
+                        },
+                        {
+                          breakpoint: 800,
+                          settings: {
+
+                          }
+                        },
+                        {
+                          breakpoint: 500,
+                          settings: {
+
+                          }
+                        }
+                      ]
+                    });
+              });
+
 
 
 $( ".tabs__caption li" ).first().addClass( "active" );
