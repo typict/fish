@@ -228,10 +228,11 @@ color: #1e2d41;
 .user{
 width: 24px;
     height: 24px;
-    background-image: url(../img/user.png);
+    background-image: url(../img/user.svg);
     float: right;
     margin-top: 12px;
     margin-right: 28px;
+    background-size: contain;
   &:hover{
     opacity: 0.8
   }
@@ -239,7 +240,8 @@ width: 24px;
 .cart{
 width: 40px;
     height: 24px;
-    background-image: url(../img/cart.png);
+    background-image: url(../img/cart.svg);
+    background-size: contain;
     background-position: 0;
     float: right;
     background-repeat: no-repeat;
@@ -277,16 +279,19 @@ width: 40px;
   position: absolute;
   display: block;
   background: none;
-  background-image: url(../img/search.png);
+  background-image: url(../img/search.svg);
   background-size:  contain;
   border-radius:0;
   right: -30px;
   top: 0;
   padding: 0;
+  background-repeat: no-repeat;
   &:hover{
     background: none;
-    background-image: url(../img/search.png);
+    background-image: url(../img/search.svg);
     opacity:  0.8;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
 }
@@ -495,12 +500,12 @@ color: #000;
   content:'';
   width: 32px;
   height: 50px;
-  background-image: url(../img/arr_l.png);
+  background-image: url(../img/arr_l.svg);
 display: block;
 opacity: 1;
 }
  .slick-next:before{
-  background-image: url(../img/arr_r.png);
+  background-image: url(../img/arr_r.svg);
  }
  .slick-prev {
     left: -45px;
@@ -963,7 +968,7 @@ footer{
     &:hover{
       &:before{
         content:'';
-        background-image: url(../img/tel_h.png);
+        background-image: url(../img/tel_h.svg);
       }
     }
   }
@@ -982,14 +987,14 @@ footer{
       &:hover{
       &:before{
         content:'';
-        background-image: url(../img/mail_h.png);
+        background-image: url(../img/mail_h.svg);
       }
     }
   }
   .adress{
     &:before{
         content:'';
-        background-image: url(../img/adr.png);
+        background-image: url(../img/adr.svg);
 
       }
 
