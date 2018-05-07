@@ -734,7 +734,7 @@ max-width: 82%;
 
 
     .slider{
-      padding-left: 10%;
+      padding-left: 15%;
     padding-right: 10%;
     }
     .slider .slick-next, .slider .slick-prev{
@@ -745,7 +745,7 @@ max-width: 82%;
       right: -5%;
     }
     .slider .slick-prev{
-      left: -5%;
+      left: 5%;
     }
 }
 .partner_item{
@@ -1017,18 +1017,31 @@ footer{
 
 
 }
+.footer_soc,
+.footer_cop,
+.footer_dev{
+width: 33%;
+margin: 0;
+float: left;
+  color: #b3b6b9;
+}
+.footer_dev{
+  text-align: right;
+}
 
 .footer_soc{
   color: #b3b6b9;
-  float: right;
-  .fb,.in,.tv{
+  text-align: center;
+
+ .fb,.in,.tv{
     width: 20px;
     height: 20px;
     display: block;
     background-position: center center;
       background-repeat: no-repeat;
       background-size: contain;
-      float: right;
+display: inline-block;
+
       margin-left: 14px;
       margin-right: 14px;
   }
