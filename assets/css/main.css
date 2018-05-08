@@ -1245,7 +1245,7 @@ footer {
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 26px;
-  background-image: url(../img/sea_s.png);
+  background-image: url(../img/sea_s.svg);
   background-position: bottom left 2px;
   background-repeat: no-repeat;
   font-family: 'Roboto Slab', serif;
@@ -1333,14 +1333,14 @@ footer {
   width: 11px;
   height: 15px;
   background: none;
-  background-image: url(../img/cap.png);
+  background-image: url(../img/cap_h.svg);
   opacity: 1;
   background-repeat: no-repeat;
   color: #1e2d41;
 }
 
 .slider .slick-dots li.slick-active button:before, .slider .slick-dots li:hover button:before {
-  background-image: url(../img/cap_h.png);
+  background-image: url(../img/cap.svg);
   opacity: 1;
   color: #3876e1;
 }
@@ -1359,13 +1359,15 @@ footer {
   content: '';
   width: 32px;
   height: 50px;
-  background-image: url(../img/arr_l.png);
+  background-image: url(../img/arr_l.svg);
   display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
   opacity: 1;
 }
 
 .slider .slick-next:before {
-  background-image: url(../img/arr_r.png);
+  background-image: url(../img/arr_r.svg);
 }
 
 .slider .slick-prev {
