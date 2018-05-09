@@ -947,7 +947,8 @@ footer {
 
 .tabs {
   position: relative;
-  max-width: 89%;
+  max-width: 82%;
+  margin: auto;
   margin-top: 24px;
   padding-top: 10px;
   padding-left: 30px;
@@ -1408,7 +1409,7 @@ footer {
 }
 
 .catalog .title {
-  max-width: 82%;
+  max-width: 66%;
   margin: auto;
 }
 
@@ -1442,7 +1443,7 @@ footer {
 }
 
 .sport .title {
-  max-width: 82%;
+  max-width: 66%;
   margin: auto;
 }
 
@@ -1465,7 +1466,7 @@ footer {
   position: relative;
   float: left;
   margin: 2%;
-  margin-left: 5%;
+  margin-left: 14%;
 }
 
 .map_item {
@@ -1636,7 +1637,7 @@ footer {
 }
 
 .partner .title {
-  max-width: 82%;
+  max-width: 66%;
   margin: auto;
 }
 
@@ -1728,7 +1729,7 @@ footer {
 }
 
 .rev .title {
-  max-width: 82%;
+  max-width: 66%;
   margin: auto;
 }
 
@@ -1749,9 +1750,9 @@ footer {
 
 .slider_rev {
   width: 100%;
-  max-width: 73%;
+  max-width: 65%;
   margin: auto;
-  margin-left: 8%;
+  margin-left: 17%;
   margin-top: 7%;
   margin-top: 7.5%;
 }
