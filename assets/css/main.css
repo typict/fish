@@ -1092,7 +1092,7 @@ footer {
 .cart {
   width: 40px;
   height: 24px;
-  background-image: url(../img/cart.svg);
+  background-image: url(../img/shopping-cart.svg);
   background-size: contain;
   background-position: 0;
   float: right;
@@ -1331,14 +1331,14 @@ footer {
   width: 11px;
   height: 15px;
   background: none;
-  background-image: url(../img/cap_h.svg);
+  background-image: url(../img/cap.svg);
   opacity: 1;
   background-repeat: no-repeat;
   color: #1e2d41;
 }
 
 .slider .slick-dots li.slick-active button:before, .slider .slick-dots li:hover button:before {
-  background-image: url(../img/cap.svg);
+  background-image: url(../img/cap_h.svg);
   opacity: 1;
   color: #3876e1;
 }
@@ -1894,7 +1894,7 @@ footer .adress, footer .mail, footer .tel {
   float: left;
   width: 100%;
   margin-top: 9px;
-  line-height: 30px;
+  line-height: 22px;
 }
 
 footer .adress:hover a, footer .mail:hover a, footer .tel:hover a {
@@ -1966,27 +1966,27 @@ footer .adress:before {
 }
 
 .footer_soc .fb {
-  background-image: url(../img/fb.png);
+  background-image: url(../img/facebook.svg);
 }
 
 .footer_soc .fb:hover {
-  background-image: url(../img/fb_h.png);
+  opacity: 0.8;
 }
 
 .footer_soc .in {
-  background-image: url(../img/in.png);
+  background-image: url(../img/instagram.svg);
 }
 
 .footer_soc .in:hover {
-  background-image: url(../img/in_h.png);
+  opacity: 0.8;
 }
 
 .footer_soc .tv {
-  background-image: url(../img/tw.png);
+  background-image: url(../img/telegram.svg);
 }
 
 .footer_soc .tv:hover {
-  background-image: url(../img/tw_h.png);
+  opacity: 0.8;
 }
 
 .footer_cop {

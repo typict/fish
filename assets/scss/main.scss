@@ -288,7 +288,7 @@ width: 24px;
 .cart{
 width: 40px;
     height: 24px;
-    background-image: url(../img/cart.svg);
+    background-image: url(../img/shopping-cart.svg);
     background-size: contain;
     background-position: 0;
     float: right;
@@ -518,7 +518,7 @@ color: #000;
       height: 15px;
       background: none;
 
-      background-image: url(../img/cap_h.svg);
+      background-image: url(../img/cap.svg);
       opacity: 1;
       background-repeat:  no-repeat;
       color: #1e2d41 ;
@@ -527,7 +527,8 @@ color: #000;
   &.slick-active,&:hover{
     button{
       &:before{
-        background-image: url(../img/cap.svg);
+
+        background-image: url(../img/cap_h.svg);
         opacity: 1;
         color:#3876e1;
       }
@@ -1054,7 +1055,7 @@ footer{
     float: left;
     width: 100%;
     margin-top: 9px;
-    line-height: 30px;
+  line-height: 22px;
     // &:before{
     //   width: 29px;
     //   height: 29px;
@@ -1152,21 +1153,21 @@ display: inline-block;
       margin-right: 14px;
   }
   .fb{
-  background-image: url(../img/fb.png);
+  background-image: url(../img/facebook.svg);
   &:hover{
-    background-image: url(../img/fb_h.png);
+    opacity:  0.8;
   }
   }
   .in{
-  background-image: url(../img/in.png);
+  background-image: url(../img/instagram.svg);
   &:hover{
-    background-image: url(../img/in_h.png);
+    opacity:  0.8;
   }
   }
   .tv{
-  background-image: url(../img/tw.png);
+  background-image: url(../img/telegram.svg);
   &:hover{
-    background-image: url(../img/tw_h.png);
+    opacity:  0.8;
   }
   }
 }
