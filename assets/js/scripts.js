@@ -31,15 +31,9 @@ if (typeof jQuery === 'undefined') {
                         autoplaySpeed: 3000,
                       responsive: [
                           {
-                          breakpoint: 700,
-                          settings: {
-                            slidesToShow: 2
-                          }
-                        },
-                        {
                           breakpoint: 800,
                           settings: {
-
+                            slidesToShow: 2
                           }
                         }
                       ]
@@ -62,7 +56,7 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 700,
+                          breakpoint: 800,
                           settings: {
                             slidesToShow: 2
                           }
@@ -86,7 +80,7 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 700,
+                          breakpoint: 800,
                           settings: {
                             slidesToShow: 2
                           }
@@ -110,7 +104,7 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 700,
+                          breakpoint: 800,
                           settings: {
                             slidesToShow: 2
                           }
@@ -134,7 +128,7 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 700,
+                          breakpoint: 800,
                           settings: {
                             slidesToShow: 2
                           }
@@ -158,7 +152,7 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 700,
+                          breakpoint: 800,
                           settings: {
                             slidesToShow: 2
                           }
@@ -182,7 +176,7 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 700,
+                          breakpoint: 800,
                           settings: {
                             slidesToShow: 2
                           }
@@ -198,21 +192,7 @@ if (typeof jQuery === 'undefined') {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         autoplaySpeed: 3000,
-                        adaptiveHeight: true,
-                      responsive: [
-                          {
-                          breakpoint: 1600,
-                          settings: {
-
-                          }
-                        },
-                        {
-                          breakpoint: 800,
-                          settings: {
-
-                          }
-                        }
-                      ]
+                        adaptiveHeight: true
                     });
               });
 
@@ -232,9 +212,16 @@ if (typeof jQuery === 'undefined') {
                           }
                         },
                         {
-                          breakpoint: 700,
+                          breakpoint: 800,
                           settings: {
                             slidesToShow: 2
+                          }
+                        }
+                        ,
+                        {
+                          breakpoint: 600,
+                          settings: {
+                            slidesToShow: 1
                           }
                         }
                       ]
@@ -284,3 +271,27 @@ $(document).ready(function(){
         $('.tel_pop').toggleClass('open')
                     });
 });
+
+
+  $(function(){
+    $('#menu_title1').click(function(){
+        $('#footer_menu_1').toggleClass('open')
+                    });
+});
+
+    $(function(){
+    $('#menu_title2').click(function(){
+        $('#footer_menu_2').toggleClass('open')
+                    });
+});
+
+      $(function(){
+    $('#menu_title3').click(function(){
+        $('#footer_menu_3').toggleClass('open')
+                    });
+});
+
+
+$(".footer_menu_title").click(function () {
+     $(this).toggleClass("active");
+   });
