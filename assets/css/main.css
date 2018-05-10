@@ -3014,6 +3014,8 @@ footer .adress:before {
     position: absolute;
     bottom: 0;
     text-transform: uppercase;
+    left: 0;
+    right: 0;
   }
   .rss input {
     width: 100%;
