@@ -2336,6 +2336,9 @@ footer .adress:before {
   .tel_top_w {
     margin-left: 0;
   }
+  .wrapper {
+    min-height: 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -3189,6 +3192,115 @@ footer .adress:before {
   100% {
     transform: scale(1.3);
     opacity: 0;
+  }
+}
+
+.contacts_c {
+  padding: 0;
+}
+
+.contacts_c .row {
+  background-image: url(../img/c_fish_l.png);
+  background-position: left 56px bottom;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 134px;
+}
+
+.contacts_c .title {
+  max-width: 66%;
+  margin: auto;
+}
+
+.contacts_c_wrap {
+  background-image: url(../img/c_sea_r.png);
+  background-position: right 132px bottom;
+  background-repeat: no-repeat;
+  margin: auto;
+  max-width: 1920px;
+}
+
+.contact_item {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.contact_item_title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: Roboto Slab,serif;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-top: 46px;
+  margin-bottom: 18px;
+}
+
+.contact_item_icon {
+  text-align: center;
+  margin: auto;
+}
+
+.contact_item_content, .contact_item_content a {
+  color: #1e2d41;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  line-height: 24px;
+}
+
+.contacts_items {
+  max-width: 64%;
+  margin: auto;
+  margin-top: 78px;
+}
+
+@media (max-width: 1200px) {
+  .contacts_c .title {
+    max-width: 98%;
+  }
+  .contacts_items {
+    max-width: 98%;
+  }
+  .contacts_c_wrap {
+    background-position: right bottom;
+  }
+  .contacts_c .row {
+    background-position: left bottom;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact_item {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+  .contacts_c_wrap {
+    background: none;
+  }
+  .contacts_c .row {
+    padding-top: 55px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: none;
+    padding-bottom: 14px;
+  }
+  .contacts_c .title, .contacts_items {
+    width: 100%;
+    max-width: 100%;
+  }
+  .contacts_items {
+    margin-top: 26px;
+  }
+  .contact_item_title {
+    font-size: 17px;
+    margin-top: 28px;
+    margin-bottom: 8px;
+  }
+  .contact_item_content, .contact_item_content a {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
