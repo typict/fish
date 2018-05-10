@@ -3024,6 +3024,10 @@ footer .adress:before {
   header .header--logo img {
     max-width: 70px;
   }
+  .tel_pop {
+    width: 135px;
+    right: 7px;
+  }
 }
 
 @-webkit-keyframes pulsejg1 {
