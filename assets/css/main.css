@@ -2651,16 +2651,9 @@ footer .adress:before {
     cursor: pointer;
     transition: 2s;
   }
-  .footer_menu_title:hover, .footer_menu_title.active, .footer_menu_title:focus {
+  .footer_menu_title:hover, .footer_menu_title.active {
     background: #3876e1;
     color: #fff;
-  }
-  .footer_menu_title:active {
-    color: #82a7db;
-  }
-  .footer_menu_title:disabled {
-    cursor: not-allowed;
-    opacity: .5;
   }
   .footer_menus_item li {
     text-align: center;
@@ -2885,6 +2878,9 @@ footer .adress:before {
     height: 80px;
     margin-bottom: 60px;
   }
+  .slick-slide.partner_item img {
+    max-height: 80px;
+  }
   .partner_items .slider .slick-prev {
     left: 0;
   }
@@ -3024,6 +3020,9 @@ footer .adress:before {
   .footer_dev {
     width: 100%;
     margin-top: 10px;
+  }
+  header .header--logo img {
+    max-width: 70px;
   }
 }
 

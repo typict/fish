@@ -1774,19 +1774,11 @@ padding-left: 0;
     padding-right: 36px;
     cursor: pointer;
         transition: 2s;
-      &:hover,&.active,
-  &:focus {
+      &:hover,&.active{
     background: #3876e1;
     color: #fff;
   }
-  &:active {
-    color: lighten($action-color, 15%);
-  }
-  &:disabled {
-    cursor: not-allowed;
 
-    opacity: .5;
-  }
 }
 .footer_menus_item li{
   text-align: center;
@@ -2015,6 +2007,9 @@ padding-top: 0;
       box-shadow: none;
       height: 80px;
       margin-bottom: 60px;
+      img{
+        max-height:  80px;
+      }
 }
 .partner_items .slider .slick-prev{
   left: 0;
@@ -2160,7 +2155,9 @@ margin-top: 0px;
     width: 100%;
     margin-top: 10px;
 }
-
+header .header--logo img {
+    max-width: 70px;
+}
 
 }
 
