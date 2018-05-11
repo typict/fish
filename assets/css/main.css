@@ -3229,7 +3229,7 @@ footer .adress:before {
 .contact_item_title {
   font-size: 24px;
   text-transform: uppercase;
-  font-family: Roboto Slab,serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 700;
   text-align: center;
   width: 100%;
@@ -3301,6 +3301,129 @@ footer .adress:before {
   .contact_item_content, .contact_item_content a {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+.contacts_page_pay .contacts_c .row {
+  background-image: url(../img/pay_r.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.contacts_page_pay .contacts_c .contacts_c_wrap {
+  background-image: url(../img/pay_l.png);
+  background-position: left bottom 70px;
+  background-repeat: no-repeat;
+}
+
+.contacts_page_pay .contacts_c .contact_item_content span {
+  color: #3876e1;
+}
+
+.contacts_page_pay .contacts_items {
+  margin-top: 120px;
+}
+
+.graph_title, .graph_time {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+.graph {
+  max-width: 66%;
+  margin: auto;
+  margin-top: 53px;
+}
+
+.graph_time {
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+.graph_items {
+  float: left;
+  width: 50%;
+  margin-top: 14px;
+}
+
+.graph_items li {
+  width: 100%;
+  padding-left: 50px;
+  position: relative;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  line-height: 28px;
+}
+
+.graph_items li:before {
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-image: url(../img/icont_pr.svg);
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.graph_items:nth-child(2) {
+  padding-left: 30px;
+}
+
+.graph_items_last {
+  padding-left: 54px;
+}
+
+@media (max-width: 1200px) {
+  .graph {
+    max-width: 98%;
+  }
+}
+
+@media (max-width: 700px) {
+  .contacts_page_pay .contacts_items {
+    margin-top: 40px;
+  }
+  .graph_items {
+    width: 100%;
+    margin-top: 0;
+  }
+  .graph_items_last {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .graph {
+    margin-top: 23px;
+  }
+  .graph_title {
+    font-size: 19px;
+  }
+  .graph_time {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+  .graph_items li {
+    padding-left: 38px;
+    font-size: 14px;
+    margin-top: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .contacts_page_pay .contact_item_content {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts_page_pay .contacts_c .row {
+    background-image: none;
+  }
+  .contacts_page_pay .contacts_c .contacts_c_wrap {
+    background-image: none;
   }
 }
 
