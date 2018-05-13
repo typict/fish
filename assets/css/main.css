@@ -2711,10 +2711,11 @@ footer .adress:before {
   }
   .tel_top_w {
     bottom: 76px;
-    width: 160px;
+    width: 164px;
   }
   .tel_top_w a {
     font-size: 18px;
+    top: -4px;
   }
   .top {
     padding-top: 14%;
