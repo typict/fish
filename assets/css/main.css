@@ -4177,4 +4177,12 @@ footer .adress:before {
   }
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=maps/main.css.map */
