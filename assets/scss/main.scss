@@ -76,14 +76,6 @@ picture {
 
 header {
   background: #f7fafe;
-
-
-  .row {
-    background-image: url( ../img/bigfish_bg.png);
-  background-position:   bottom 10px right;
-  background-repeat: no-repeat;
-  }
-
   .header--logo {
 display: block;
     max-width: 334px;
@@ -96,6 +88,13 @@ display: block;
       max-width: 106px;
 
     }
+  }
+}
+.home .header{
+   .row {
+    background-image: url( ../img/bigfish_bg.png);
+  background-position:   bottom 10px right;
+  background-repeat: no-repeat;
   }
 }
 nav {
@@ -3168,4 +3167,201 @@ br{
 
 }
 }
+}
+
+
+
+// cabinet
+// cabinet-------------------------------------------------------------------------------------
+// cabinet
+
+.kabinet{
+  padding: 0;
+  .row{
+    background-image: url(../img/cab_l.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+        padding-bottom: 155px;
+  }
+  .kabinet_wrap{
+    background-image: url(../img/cab_r.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
+  .title{
+    width: 66%;
+    margin: auto;
+  }
+  .tabs{
+    width: 66%;
+    padding: 0;
+    margin: auto;
+        margin-top: 50px;
+  }
+  .tabs__caption{
+    float: left;
+    width: 23%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    background:#fff;
+    margin-top: 8px;
+    li{
+      width: 100%;
+      padding: 21px;
+      border-radius:0;
+      border-bottom:  1px solid #dbe3ea;
+      text-align: left;
+      display: block;
+
+      i{
+            margin-right: 23px
+      }
+      &:hover{
+        color: #3775de;
+        background: none;
+      }
+      &.active{
+        background: #f3f7fd;
+        color: #3775de;
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  .tabs__content{
+    float: right;
+    width: 77%;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+
+    form{
+          margin-top: 30px;
+      input{
+width: 48%;
+    float: left;
+       margin-right: 2%;
+    padding: 15px;
+    padding-top: 13px;
+    padding-bottom: 17px;
+    border-radius: 30px;
+    border:1px solid #dbe3ea;
+    box-shadow:none;
+        margin-bottom: 28px;
+      }
+::-webkit-input-placeholder {color:#b3b6b9;}
+::-moz-placeholder          {color:#b3b6b9;}
+:-moz-placeholder           {color:#b3b6b9;}
+:-ms-input-placeholder      {color:#b3b6b9;}
+    }
+  }
+}
+.kabinet_title{
+  font-size: 24px;
+  font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+
+}
+
+
+@media(max-width:1400px) {
+.kabinet{
+.tabs__caption{
+width: 40%;
+}
+.tabs__content{
+width: 60%;
+}
+}
+
+}
+
+@media(max-width:1300px) {
+.kabinet{
+  .title{
+    width: 98%;
+  }
+  .tabs{
+    width: 98%;
+  }
+}
+}
+
+
+@media(max-width:1000px) {
+.kabinet .tabs__content form input{
+  width: 100%;
+  margin-right: 0;
+}
+.kabinet{
+.tabs__caption{
+width: 50%;
+}
+.tabs__content{
+width: 50%;
+}
+}
+}
+
+@media(max-width:600px) {
+.kabinet{
+  .row{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: none;
+    padding-top: 44px;
+        padding-bottom: 60px;
+       background-image: none;
+
+
+  }
+  .title{
+    width: 100%;
+  }
+  .tabs,.tabs__caption,.tabs__content{
+    width: 100%;
+  }
+  .tabs__content{
+    padding: 0;
+
+        form input {
+    padding-top: 6px;
+    padding-bottom: 11px;
+        margin-bottom: 20px;
+
+}
+
+form button {
+    width: 300px;
+    margin: auto;
+    display: block;
+    padding: 14px;
+    font-size: 16px;
+}
+  }
+.tabs__caption{
+  margin-bottom: 58px;
+}
+.kabinet_wrap{
+background-image: none;
+
+}
+}
+.kabinet_wrap{
+  background: none;
+
+}
+.kabinet .tabs {
+    padding: 0;
+    margin-top: 22px;
+}
+.kabinet_title{
+  font-size: 17px;
+}
+
 }
