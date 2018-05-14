@@ -3038,6 +3038,20 @@ footer .adress:before {
     width: 135px;
     right: 7px;
   }
+  .slider .slick-next, .slider .slick-prev {
+    width: 14px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  .slider .slick-next:before, .slider .slick-prev:before {
+    content: "";
+    width: 14px;
+    height: 20px;
+    background-image: url(../img/mob_arr_l.png);
+  }
+  .slider .slick-next:before {
+    background-image: url(../img/mob_arr_r.png);
+  }
 }
 
 @-webkit-keyframes pulsejg1 {

@@ -1282,6 +1282,8 @@ nav ul li{
 .map_name{
   font-size: 12px;
 }
+
+
 }
 
 @media(max-width:1500px) {
@@ -2169,6 +2171,22 @@ header .header--logo img {
 .tel_pop {
     width: 135px;
     right: 7px;
+}
+
+.slider .slick-next, .slider .slick-prev{
+    width: 14px;
+    height: 20px;
+    margin-top: -10px;
+}
+.slider .slick-next:before, .slider .slick-prev:before {
+    content: "";
+    width: 14px;
+    height: 20px;
+    background-image: url(../img/mob_arr_l.png);
+
+}
+.slider .slick-next:before{
+  background-image: url(../img/mob_arr_r.png);
 }
 }
 
