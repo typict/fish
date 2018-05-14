@@ -891,7 +891,7 @@ header .header--logo img {
   max-width: 106px;
 }
 
-.home .header .row {
+.home header .row {
   background-image: url(../img/bigfish_bg.png);
   background-position: bottom 10px right;
   background-repeat: no-repeat;
@@ -1643,7 +1643,7 @@ footer {
 
 .partner .row {
   background-image: url(../img/partner_r.png);
-  background-position: right center;
+  background-position: right 10px center;
   background-repeat: no-repeat;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1952,6 +1952,12 @@ footer .adress:before {
 .footer_soc {
   color: #b3b6b9;
   text-align: center;
+  margin-top: -4px;
+}
+
+.footer_soc span {
+  height: 20px;
+  vertical-align: text-top;
 }
 
 .footer_soc .fb, .footer_soc .in, .footer_soc .tv {

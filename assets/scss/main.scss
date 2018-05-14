@@ -90,7 +90,7 @@ display: block;
     }
   }
 }
-.home .header{
+.home header{
    .row {
     background-image: url( ../img/bigfish_bg.png);
   background-position:   bottom 10px right;
@@ -821,7 +821,7 @@ max-width: 66%;
 }
   .row{
            background-image: url(../img/partner_r.png);
-      background-position:  right center;
+      background-position:  right 10px center;
       background-repeat: no-repeat;
       padding-top: 120px;
       padding-bottom: 120px;
@@ -1139,6 +1139,11 @@ float: left;
 .footer_soc{
   color: #b3b6b9;
   text-align: center;
+  margin-top: -4px;
+  span{
+    height: 20px;
+    vertical-align: text-top;
+  }
 
  .fb,.in,.tv{
     width: 20px;
