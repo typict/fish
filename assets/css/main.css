@@ -4122,6 +4122,42 @@ footer .adress:before {
   text-transform: uppercase;
 }
 
+.tabs_order_open a {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.tabs_order_open a:before {
+  content: '+';
+  display: block;
+  position: absolute;
+}
+
+.open .tabs_order_open a:before {
+  content: '-';
+}
+
+.tabs_order td {
+  text-align: center;
+}
+
+.tabs_order_content {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.open .tabs_order_content {
+  overflow: visible;
+  height: auto;
+  opacity: 1;
+}
+
 @media (max-width: 1400px) {
   .kabinet .tabs__caption {
     width: 40%;

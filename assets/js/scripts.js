@@ -345,3 +345,12 @@ jQuery(document).ready(function() {
 
 
 });
+
+
+
+
+  $(function(){
+    $('.tabs_order_open a').click(function(){
+        $('.tabs_order').toggleClass('open')
+                    });
+});
