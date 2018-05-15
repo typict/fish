@@ -1067,7 +1067,7 @@ footer {
   text-align: center;
   color: #1e2d41;
   display: block;
-  padding-top: 10px;
+  padding-top: 12px;
   margin-left: 10px;
 }
 
@@ -4111,6 +4111,10 @@ footer .adress:before {
   color: #b3b6b9;
 }
 
+.kabinet .tabs__content form.pass input {
+  width: 31%;
+}
+
 .kabinet_title {
   font-size: 24px;
   font-weight: bold;
@@ -4136,8 +4140,15 @@ footer .adress:before {
   }
 }
 
+@media (max-width: 1300px) {
+  .kabinet .tabs__content form.pass input {
+    width: 48%;
+  }
+}
+
 @media (max-width: 1000px) {
-  .kabinet .tabs__content form input {
+  .kabinet .tabs__content form input,
+  .kabinet .tabs__content form.pass input {
     width: 100%;
     margin-right: 0;
   }
@@ -4203,6 +4214,10 @@ footer .adress:before {
 
 .visible {
   opacity: 1;
+}
+
+table {
+  table-layout: auto;
 }
 
 /*# sourceMappingURL=maps/main.css.map */

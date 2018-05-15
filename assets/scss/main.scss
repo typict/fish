@@ -265,7 +265,7 @@ margin-right: 0px;
     text-align: center;
     color: #1e2d41;
     display: block;
-    padding-top: 10px;
+    padding-top: 12px;
     margin-left: 10px;
     &:hover,&.active{
       background: #c2d6e8;
@@ -3280,6 +3280,13 @@ width: 48%;
 ::-moz-placeholder          {color:#b3b6b9;}
 :-moz-placeholder           {color:#b3b6b9;}
 :-ms-input-placeholder      {color:#b3b6b9;}
+
+
+    }
+    form.pass{
+     input{
+      width: 31%;
+    }
     }
   }
 }
@@ -3316,8 +3323,17 @@ width: 60%;
 }
 
 
+@media(max-width:1300px) {
+.kabinet .tabs__content form.pass input{
+  width: 48%;
+}
+}
+
+
+
 @media(max-width:1000px) {
-.kabinet .tabs__content form input{
+.kabinet .tabs__content form input,
+.kabinet .tabs__content form.pass input{
   width: 100%;
   margin-right: 0;
 }
@@ -3395,4 +3411,9 @@ background-image: none;
 }
 .visible{
      opacity:1;
+}
+
+
+table {
+    table-layout: auto;
 }
