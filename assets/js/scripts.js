@@ -350,7 +350,19 @@ jQuery(document).ready(function() {
 
 
   $(function(){
-    $('.tabs_order_open a').click(function(){
-        $('.tabs_order').toggleClass('open')
+    $('#tabs_order_open1 a').click(function(){
+        $('#tabs_order1').toggleClass('open')
+                    });
+});
+
+  $(function(){
+    $('#tabs_order_open2 a').click(function(){
+        $('#tabs_order2').toggleClass('open')
+                    });
+});
+
+  $(function(){
+    $('#tabs_order_open3 a').click(function(){
+        $('#tabs_order3').toggleClass('open')
                     });
 });

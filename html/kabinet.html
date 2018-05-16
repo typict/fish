@@ -114,17 +114,17 @@
                                  <button>Зберегти зміни</button>
                               </form>
                            </div>
-                           <div class="tabs__content">
+                           <div class="tabs__content tabs__content_table">
                               <div class="kabinet_title">Замовлення</div>
                               <div class="tabs_orders">
-                                <div class="tabs_order">
+                                <div class="tabs_order" id="tabs_order1">
                                   <div class="tabs_order_head">
                                     <table>
                                       <tr>
                                         <td class="tabs_order_data_ord">Замовлення 18 травня 2018 року</td>
                                         <td class="tabs_order_status">Статус: <span class="tabs_order_status_red">Відмінено</span></td>
-                                        <td class="tabs_order_summ">Сума <span class="tabs_order_summ_money">5560 грн</span></td>
-                                        <td class="tabs_order_open"><a></a></td>
+                                        <td class="tabs_order_summ">Сума: <span class="tabs_order_summ_money">5560 грн</span></td>
+                                        <td class="tabs_order_open" id="tabs_order_open1"><a></a></td>
                                       </tr>
                                     </table>
                                   </div>
@@ -134,15 +134,84 @@
                                         <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
                                         <td class="tabs_order_name">Оселедець</td>
                                         <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
-                                        <td class="tabs_order_weight">Вага<span >5 кг</span></td>
-                                        <td class="tabs_order_content_summ">Сума <span>5560 грн</span></td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
                                       </tr>
                                       <tr>
                                         <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
                                         <td class="tabs_order_name">Оселедець</td>
                                         <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
-                                        <td class="tabs_order_weight">Вага<span >5 кг</span></td>
-                                        <td class="tabs_order_content_summ">Сума <span>5560 грн</span></td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                                </div>
+
+                                <div class="tabs_order" id="tabs_order2">
+                                  <div class="tabs_order_head">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_data_ord">Замовлення 19 травня 2018 року</td>
+                                        <td class="tabs_order_status">Статус: <span class="tabs_order_status_yel">Доставка</span></td>
+                                        <td class="tabs_order_summ">Сума: <span class="tabs_order_summ_money">5560 грн</span></td>
+                                        <td class="tabs_order_open" id="tabs_order_open2"><a></a></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="tabs_order_content">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+
+                                <div class="tabs_order" id="tabs_order3">
+                                  <div class="tabs_order_head">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_data_ord">Замовлення 19 травня 2018 року</td>
+                                        <td class="tabs_order_status">Статус: <span class="tabs_order_status_gree">Доставлено</span></td>
+                                        <td class="tabs_order_summ">Сума: <span class="tabs_order_summ_money">5560 грн</span></td>
+                                        <td class="tabs_order_open" id="tabs_order_open3"><a></a></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="tabs_order_content">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
                                       </tr>
                                     </table>
                                   </div>
