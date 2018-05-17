@@ -2202,7 +2202,7 @@ footer .adress:before {
   .top {
     padding-top: 6%;
     padding-bottom: 6%;
-    background: none;
+    background-size: 10%;
   }
   .slider_img {
     height: 180px;
@@ -2235,7 +2235,7 @@ footer .adress:before {
     padding-bottom: 10%;
   }
   .about .row {
-    background: none;
+    background-size: 10%;
   }
   .rss {
     width: 98%;
@@ -3058,6 +3058,12 @@ footer .adress:before {
   }
   .slider .slick-next:before {
     background-image: url(../img/mob_arr_r.png);
+  }
+  .about .row {
+    background: none;
+  }
+  .top {
+    background: none;
   }
 }
 

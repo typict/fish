@@ -1297,7 +1297,7 @@ nav ul li{
 .top{
   padding-top: 6%;
   padding-bottom: 6%;
-  background: none;
+    background-size: 10%;
 
 }
 .slider_img{
@@ -1332,7 +1332,7 @@ nav ul li{
   padding-bottom: 10%;
 }
 .about .row{
-  background: none;
+      background-size: 10%;
 }
 .rss{
   width: 98%;
@@ -2195,6 +2195,14 @@ width: 142px;
 }
 .slider .slick-next:before{
   background-image: url(../img/mob_arr_r.png);
+}
+
+.about .row{
+ background: none;
+}
+.top{
+  background: none;
+
 }
 }
 
