@@ -299,49 +299,25 @@ $(".footer_menu_title").click(function () {
 
 
 
-jQuery(document).ready(function() {
 
 
-  jQuery('.sport_items li').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated bounceInRight', // Class to add to the elements when they are visible
-      offset: 100
-     });
-
-  jQuery('.title_big,.left_caps,.top_left p').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated bounceInLeft', // Class to add to the elements when they are visible
-      offset: 100
-     });
-
-  jQuery('.sport_map').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-      offset: 100
-     });
-
-  jQuery('.partner_item').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
-      offset: 100
-     });
-
-  jQuery('button').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated bounceIn', // Class to add to the elements when they are visible
-      offset: 100
-     });
-
-  jQuery('.top_right .title,.title ').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
-      offset: 100
-     });
-
-  jQuery('.x').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated zoomIn', // Class to add to the elements when they are visible
-      offset: 100
-     });
 
 
-  jQuery('.slider1, .slider1 .slider_img ').addClass("hidden").viewportChecker({
-      classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
-      offset: 10
-     });
 
+  $(function(){
+    $('#tabs_order_open1 a').click(function(){
+        $('#tabs_order1').toggleClass('open')
+                    });
+});
 
+  $(function(){
+    $('#tabs_order_open2 a').click(function(){
+        $('#tabs_order2').toggleClass('open')
+                    });
+});
+
+  $(function(){
+    $('#tabs_order_open3 a').click(function(){
+        $('#tabs_order3').toggleClass('open')
+                    });
 });

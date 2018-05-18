@@ -90,7 +90,6 @@
                               <li><i><img src="img/cab_personal.svg" alt=""></i>Персональні дані</li>
                               <li><i><img src="img/cab_pass.svg" alt=""></i>Пароль</li>
                               <li><i><img src="img/cab_cart.svg" alt=""></i>Замовлення</li>
-                              <li><i><img src="img/cab_bill.svg" alt=""></i>Рахунок</li>
                               <li><i><img src="img/cab_exit.svg" alt=""></i>Вихід</li>
 
                            </ul>
@@ -107,45 +106,119 @@
                               </form>
                            </div>
                            <div class="tabs__content">
-                              <div class="kabinet_title">2Персональні дані</div>
-                              <form action="">
-                                 <input type="text" placeholder="Крупник Олексій Сергійович">
-                                 <input type="text" placeholder="Ваш E-mail">
-                                 <input type="text" placeholder="Ваш телефон">
-                                 <input type="text" placeholder="м. Львів, вул. Шевченка 25/2">
+                              <div class="kabinet_title">Пароль</div>
+                              <form class="pass" action="">
+                                 <input type="text" placeholder="Старий пароль">
+                                 <input type="text" placeholder="Новий пароль">
+                                 <input type="text" placeholder="Новий пароль ще раз">
                                  <button>Зберегти зміни</button>
                               </form>
                            </div>
-                           <div class="tabs__content">
-                              <div class="kabinet_title">3Персональні дані</div>
-                              <form action="">
-                                 <input type="text" placeholder="Крупник Олексій Сергійович">
-                                 <input type="text" placeholder="Ваш E-mail">
-                                 <input type="text" placeholder="Ваш телефон">
-                                 <input type="text" placeholder="м. Львів, вул. Шевченка 25/2">
-                                 <button>Зберегти зміни</button>
-                              </form>
-                           </div>
-                           <div class="tabs__content">
-                              <div class="kabinet_title">4Персональні дані</div>
-                              <form action="">
-                                 <input type="text" placeholder="Крупник Олексій Сергійович">
-                                 <input type="text" placeholder="Ваш E-mail">
-                                 <input type="text" placeholder="Ваш телефон">
-                                 <input type="text" placeholder="м. Львів, вул. Шевченка 25/2">
-                                 <button>Зберегти зміни</button>
-                              </form>
-                           </div>
-                           <div class="tabs__content">
-                              <div class="kabinet_title">5Персональні дані</div>
-                              <form action="">
-                                 <input type="text" placeholder="Крупник Олексій Сергійович">
-                                 <input type="text" placeholder="Ваш E-mail">
-                                 <input type="text" placeholder="Ваш телефон">
-                                 <input type="text" placeholder="м. Львів, вул. Шевченка 25/2">
-                                 <button>Зберегти зміни</button>
-                              </form>
-                           </div>
+                           <div class="tabs__content tabs__content_table">
+                              <div class="kabinet_title">Замовлення</div>
+                              <div class="tabs_orders">
+                                <div class="tabs_order" id="tabs_order1">
+                                  <div class="tabs_order_head">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_data_ord">Замовлення 18 травня 2018 року</td>
+                                        <td class="tabs_order_status">Статус: <span class="tabs_order_status_red">Відмінено</span></td>
+                                        <td class="tabs_order_summ">Сума: <span class="tabs_order_summ_money">5560 грн</span></td>
+                                        <td class="tabs_order_open" id="tabs_order_open1"><a></a></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="tabs_order_content">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+
+                                </div>
+
+                                <div class="tabs_order" id="tabs_order2">
+                                  <div class="tabs_order_head">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_data_ord">Замовлення 19 травня 2018 року</td>
+                                        <td class="tabs_order_status">Статус: <span class="tabs_order_status_yel">Доставка</span></td>
+                                        <td class="tabs_order_summ">Сума: <span class="tabs_order_summ_money">5560 грн</span></td>
+                                        <td class="tabs_order_open" id="tabs_order_open2"><a></a></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="tabs_order_content">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+
+                                <div class="tabs_order" id="tabs_order3">
+                                  <div class="tabs_order_head">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_data_ord">Замовлення 19 травня 2018 року</td>
+                                        <td class="tabs_order_status">Статус: <span class="tabs_order_status_gree">Доставлено</span></td>
+                                        <td class="tabs_order_summ">Сума: <span class="tabs_order_summ_money">5560 грн</span></td>
+                                        <td class="tabs_order_open" id="tabs_order_open3"><a></a></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <div class="tabs_order_content">
+                                    <table>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="tabs_order_img"><img src="img/r1.png" alt=""></td>
+                                        <td class="tabs_order_name">Оселедець</td>
+                                        <td class="tabs_order_price">Ціна: <span>100 грн.</span> / 1кг</td>
+                                        <td class="tabs_order_weight">Вага:<span >5 кг</span></td>
+                                        <td class="tabs_order_content_summ">Сума: <span>5560 грн</span></td>
+                                        <td class="tabs_order_open_clear" ></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+
 <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
@@ -254,7 +327,8 @@
       <script type="text/javascript" src="slick/slick.min.js"></script>
       <script type="text/javascript" src="js/tabs.js"></script>
       <script type="text/javascript" src="js/scripts.js"></script>
-
+      <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<script type="text/javascript" src="js/viewportchecker.js"></script>
 
 
    </body>
