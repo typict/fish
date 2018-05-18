@@ -703,11 +703,18 @@ body{font-family: "Roboto Condensed",'Roboto',sans-serif;}
 .warning_text_block:before{content:'';position:absolute;width:44px;height:43px;top:35px; left:50%; transform:translateX(-50%);background:url(../img2/warning_sign.svg) no-repeat;}
 .news_warning_text .main_img_text{float:left; width:64%;}
 .fullwidthtext {margin-bottom:50px;}
+
 .test_zoom{margin-bottom:50px;}
 .test_zoom .slider_zoom:hover{transform:scale(1.2);transition:100ms linear; z-index:9999;cursor:pointer;opacity:1;}
-.test_zoom .slick-prev, .test_zoom .slick-next{width: 32px;height: 50px;opacity: 1;}
-.test_zoom .slick-prev:hover, .test_zoom .slick-next:hover{opacity: 0.8;}
-.test_zoom .slick-prev:before, .test_zoom .slick-next:before{
+.test_zoom .slick-prev, .slide_tab .slick-prev, .test_zoom .slick-next, .slide_tab .slick-next,
+.test_slider_wrap .slick-prev, .test_slider_wrap .slick-next
+{width: 32px;height: 50px;opacity: 1;}
+.test_zoom .slick-prev:hover, .slide_tab .slick-prev:hover,
+.test_zoom .slick-next:hover, .slide_tab .slick-next:hover,
+.test_slider_wrap .slick-prev:hover, .test_slider_wrap .slick-next:hover {opacity: 0.8;}
+.test_zoom .slick-prev:before, .slide_tab .slick-prev:before,
+.test_slider_wrap .slick-prev:before,
+.slide_tab .slick-next:before, .test_zoom .slick-next:before{
     content:'';
     width: 32px;
     height: 50px;
@@ -717,13 +724,19 @@ body{font-family: "Roboto Condensed",'Roboto',sans-serif;}
     background-repeat: no-repeat;
     opacity: 1;
 }
-.test_zoom .slick-next:before{
+.test_zoom .slick-next:before,
+.test_slider_wrap .slick-next:before,
+.slide_tab .slick-next:before{
     background-image: url('../../html/img/arr_r.svg');
 }
-.test_zoom .slick-prev {
+.test_zoom .slick-prev,
+.test_slider_wrap .slick-prev,
+.slide_tab .slick-prev{
     left: -45px;
 }
-.test_zoom .slick-next{
+.test_zoom .slick-next,
+.test_slider_wrap .slick-next,
+.slide_tab .slick-next{
     right: -45px;
 }
 
@@ -759,6 +772,190 @@ body{font-family: "Roboto Condensed",'Roboto',sans-serif;}
     .mobile_exc{display:none;}
 
 }
+
+/*sportfishing*/
+.sportfishingpage_wrap{max-width:72%; margin:0 auto;}
+.sportfishingpage_wrap h2{padding-bottom:36px; margin-bottom:60px;}
+.address_data, .rules{float: left;width:calc(47% - 50px);margin-right:50px;}
+.map_block, .cost_block{float:left; width:53%;}
+.dest_info>*{padding-left: 58px;font-size:16px; margin-bottom:0;}
+.dest_info h3 {position:relative;margin-bottom:25px;font-weight:bold; font-size:15px; text-transform:uppercase;}
+.dest_info:not(:last-child) {margin-bottom:53px;}
+.dest_info h3:before{content:'';position: absolute; left:0; top:50%; transform:translateY(-50%);}
+.address_info:before{background:url('../img2/f_addr.svg') no-repeat; width:25px;height:25px;}
+.contacts_info:before{background:url('../img2/f_cont.svg') no-repeat; width:29px;height:29px;}
+.departure_info:before{background:url('../img2/f_route.svg') no-repeat; width:26px;height:26px;}
+.dest_info:not(:last-of-type) h3+p {font-weight:bold;padding-bottom:13px;}
+.dest_info .dest {color:#3876e1;font-weight:bold;}
+.emph {color:#999999; font-weight:400;}
+p.emph{margin-bottom:15px;}
+.sportfishingpage_wrap .departure_input {width:321px;padding:16px 21px; margin-right:19px;margin-bottom:0;border:1px solid #dbe3ea;box-sizing:border-box;border-radius:25px; font-size:16px;}
+.address_data label{display:inline-block;margin-bottom:0;width:321px;}
+.dep_btn{display:inline-flex;justify-content:center;padding-top:18px; padding-bottom:18px; width:206px;font-size:14px;box-sizing:border-box;font-weight:bold; color:white; }
+.route_map_cont>*{width:100%;}
+.square_data_block{padding:26px 0 26px 65px; border: 1px solid #dbe3ea; border-top:none;}
+.square_data_block p {position:relative;font-weight:bold; font-size:15px; color:black;text-transform:uppercase;}
+.square_data_block p .square_data{color:#3876e1;}
+.square_data_block p:before{content:'';position:absolute;left:-38px; top:50%; transform:translateY(-50%); width:27px; height:27px; background:url('../img2/square.svg') no-repeat;}
+.vehicle_block{float:left; width:calc(47% - 50px); margin-right:50px;}
+.live_video_cont {float:left;width:53%;}
+.vehicle_cont{background: #ffffff; padding:30px; box-shadow:0 0 30px 0 rgba(0,0,0,0.1);}
+.vehicle_cont:not(:last-child) {margin-bottom:23px;}
+.vehicle {float:left;width:calc(55% - 30px); margin-right:30px;}
+.draw_route_cont{float:left; width:45%;}
+.vehicle img {float:left; width:80px;}
+.vehicle_desc{margin-left:100px;}
+.sportfishingpage_wrap .button {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    background: #fff;
+    color: #57c9d4;
+    font-weight: 700;
+    text-transform: none;
+    border: 1px solid #57c9d4;
+    margin-top: 45px;
+}
+.sportfishingpage_wrap  .button:hover {
+    color: #fff;
+    background: #57c9d4;}
+
+.live_video_cont{position:relative;}
+.live_video_cont img {width:100%;}
+em.live_btn{position:absolute;display:block;left:50%; top:50%; transform:translate(-50%,-50%);width:60px;height:60px;background:url('../img2/play.svg') no-repeat;z-index:10;cursor:pointer;}
+.live_video_cont .red_point{position:absolute;left:46px; bottom:34px; font-size:20px; color:#ffffff;text-transform:uppercase;}
+.live_video_cont .red_point:before{content:'';position:absolute;left:-17px; top:50%; transform:translateY(-50%);width:10px; height:10px; border-radius:50%; background:#ee0f0f;}
+.vehicle_desc h3 {margin-bottom:30px;text-transform: uppercase; font-weight:bold;font-size:15px;}
+.vehicle_desc h3+p, .vehicle_desc h3+p+p{color:#999999;font-weight:400;}
+.vehicle_desc h3+p span, .vehicle_desc h3+p+p span{color:#3876e1; font-weight:bold;}
+.button .draw_route.button {width:100%;}
+.stream_block {margin-bottom:50px;}
+.catalog_page .catalog .lake_rules h2.title{margin-bottom:40px;}
+.rules{font-size:14px; line-height:26px;}
+.rules p {margin-bottom:0;}
+.rules p:first-child{margin-bottom:40px;}
+.cost_block{position:relative;padding-top:140px;padding-bottom:52px;background:#f7fafe;text-align:center;}
+.cost_block p {font-family:'Roboto Slab',sans-serif; font-weight:bold; color:#3876e1; text-transform:uppercase;font-size:24px;line-height:32px;}
+.cost_title {display:block; color:#000000;}
+.cost_block:before{content:'';position:absolute; top:47px; left:50%;width:61px; height:62px;transform:translateX(-50%); background:url('../img2/cost.svg') no-repeat;}
+.slide_tab .slick-slide{box-shadow:none !important;}
+.vil_title {font-family:'Roboto Slab',sans-serif; font-weight:bold; text-transform:uppercase; font-size:24px;}
+.vil_wrap{position:relative;padding-top:180px;}
+.vil_wrap:before {position:absolute; content:''; left:50%; top:0; transform:translateX(-50%); width:143px; height:143px; border-radius:50%; border:1px solid transparent;
+background: #e2ebf7;}
+.vil_item_1:before{background-image:url('../img2/vil_1.png');background-repeat:no-repeat; background-position:50%;}
+.vil_item_2:before{background-image:url('../img2/vil_2.png');background-repeat:no-repeat; background-position:50%;}
+.vil_item_3:before{background-image:url('../img2/vil_3.png');background-repeat:no-repeat; background-position:50%;}
+.vil_item_4:before{background-image:url('../img2/vil_4.png');background-repeat:no-repeat; background-position:50%;}
+.slide_tab .slide_tab_slide.active_tab_slide .vil_wrap:before{border-color: #3a77e1;}
+.slide_tab .slide_tab_slide.active_tab_slide .vil_title {color: #3a77e1;}
+.slide_tab {margin-bottom:90px;}
+.news_page.catalog_page .catalog .sportfishingpage_row.row {background-image:url('../img2/fishing_fish_2.png'); background-position:top 45% right -60px;}
+.news_page.catalog_page .sportfishing_catalog {background-image:url('../img2/fishing_fish_3.png');background-position:left -40px bottom 250px;}
+.news_page.catalog_page .sportfishing_catalog .catalog_wrap {background-image:url('../img2/fishing_fish_1.png');background-position: -20px 450px;}
+@media (max-width:1325px) {
+    .sportfishingpage_row .sportfishingpage_wrap{max-width:calc(100% - 30px);}
+    .slide_tab, .test_slider_wrap {max-width:90%; margin: 0 auto 90px;}
+}
+@media (max-width:768px) {
+    .news_page.catalog_page .catalog .sportfishingpage_row.row {background:none;}
+    .news_page.catalog_page .sportfishing_catalog {background:none;}
+    .news_page.catalog_page .sportfishing_catalog .catalog_wrap {background:none;}
+}
+
+.emph+p {display:flex; align-items:center; justify-content:space-between;}
+
+@media (max-width:1800px) {
+    .emph+p {flex-direction:column;align-items:start;}
+    .emph+p label{margin-bottom:10px;}
+    .dep_btn{margin-bottom:46px;}
+}
+@media (max-width:1600px) {
+    .vehicle {width:100%;margin-right:0; margin-bottom:10px;}
+    .sportfishingpage_wrap .button{margin-top:0; width:100%;}
+    .draw_route_cont{float:none;width:100%;}
+    .sportfishingpage_wrap .departure_input {width:100%;}
+    .address_data label, .sportfishingpage_wrap .button{width:100%;}
+}
+.map_block{margin-bottom:50px;}
+
+/*test_slider*/
+.test_slider div {float:left; width: 25%; text-align:center;}
+.slide_tab_slide{outline:none !important;}
+.test_slider_wrap{position:relative;margin-bottom:90px;}
+.test_slider_wrap .testslider-next, .test_slider_wrap .testslider-prev {position:absolute; top:50%; transform:translateY(-50%); width:32px; height:50px;cursor:pointer; z-index:5;}
+.test_slider_wrap .testslider-next:before, .test_slider_wrap .testslider-prev:before{content:'';position:absolute;width: 32px; height:50px; background-size: contain;opacity: 1; }
+.test_slider_wrap .testslider-next:before{background:url('../../html/img/arr_r.svg') no-repeat;}
+.test_slider_wrap .testslider-prev:before{background:url('../../html/img/arr_l.svg') no-repeat;}
+.test_slider_wrap .testslider-next:before:hover, .test_slider_wrap .testslider-prev:before:hover{opacity: 0.8;}
+.test_slider_wrap .testslider-prev{ left: -45px;}
+.test_slider_wrap .testslider-next{ right: -45px;}
+.test_slider_slide.active_test_slide .vil_wrap:before{border-color: #3a77e1;}
+.test_slider_slide.active_test_slide .vil_title {color: #3a77e1;}
+.test_slider_slide{cursor:pointer;}
+@media (max-width:1300px) {
+    .test_slider {width:134%;}
+    .test_slider div {width:33.3%;}
+    .overflow_slider{overflow:hidden;}
+
+}
+.slide_tab_slide{cursor:pointer;}
+
+@media (max-width:833px) {
+    .test_slider div{width:50%;}
+    .address_data, .map_block, .vehicle_block,.live_video_cont,.rules,.cost_block{float:none; width:100%; margin-right:0;}
+    .news_page.catalog_page .catalog .sportfishingpage_row.row, .news_page.catalog_page .sportfishing_catalog, .news_page.catalog_page .sportfishing_catalog .catalog_wrap{background:none;}
+    .vehicle_block, .rules {margin-bottom: 60px;}
+    .cost_block{margin-bottom:50px;}
+}
+@media (max-width:444px) {
+    .vil_title{font-size:16px;}
+    .slide_tab .slick-prev, .slide_tab .slick_next{width:13px; height:20px;}
+    .slide_tab .slick-prev:before, .slide_tab .slick-next:before{width:13px; height:20px;}
+    .slide_tab .slick-prev:before{background-image:url('../img2/sp_mob_arr_left.png');}
+    .slide_tab .slick-next:before{background-image:url('../img2/sp_mob_arr_right.png');}
+    .vil_wrap{padding-top:133px;}
+    .vil_wrap:before {position:absolute; content:''; left:50%; top:0; transform:translateX(-50%); width:106px; height:106px; border-radius:50%; border:1px solid transparent; background-size:60%; background-position:50%;}
+    .slide_tab {margin-bottom:36px;}
+    .dep_btn {width:100%; background:#3876e1;}
+    .dest_info .departure_info+.emph+p{padding-left:0;}
+    .emph+p label{margin-bottom:19px;}
+    .vehicle{margin-bottom:30px;}
+    .cost_block p{font-size:16px;}
+    p.emph {margin-bottom:20px;}
+    .cont_name {display:block; padding-top:14px;}
+    .dest_info.dest_title p {display:inline-block;}
+    .dest_info.dest_title p.dest{display:inline-block; padding-left:7px;}
+    .dest_info:not(:last-child) {margin-bottom:38px;}
+    .sportfishingpage_wrap .button {color: #ffffff;font-weight: 700;text-transform: none;border: 1px solid #3876e1;margin-top: 45px;background:#3876e1;}
+    .sportfishingpage_wrap .button:hover{background:#2c5999;transition: background-color .75s ease,color 105ms ease,opacity 45ms ease;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
