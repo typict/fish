@@ -2,6 +2,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*# sourceMappingURL=maps/main.css.map */
 
 
+
+
 /*catalog page*/
 body{font-family: "Roboto Condensed",'Roboto',sans-serif;}
 .clr:after{content:''; display:block; clear:both;}
@@ -965,13 +967,63 @@ background: #e2ebf7;}
 
 
 
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+
+.wh_bg{
+max-width:1300px;
+margin: auto;
+}
+
+.newspage_inner_wrap {
+    max-width: 630px;
+}
+.newspage_titleand{
+    max-width: 1260px;
+    margin: auto;
+}
+.newspage_titleand h2{
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+.newspage_inner_wrap .main_img_wrap {
+    float: left;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.main_img_text,
+.newspage_inner_wrap .news_list,
+.warning_text_block,
+.newspage_inner_wrap .news_page_starting_block .main_img_text,
+.newspage_inner_wrap .news_page_sec_block .main_img_text,
+.news_warning_text .main_img_text{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wh_bg h3 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 64px;
+}
 
 
 
 
 
 
-
+@media (max-width:600px) {
+.newspage_titleand h2{
+  font-size: 20px;
+}
+}
 
 
 
