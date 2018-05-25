@@ -1098,10 +1098,18 @@ margin: auto;
 }
 
 
-
-
-
-
+@media (max-width:600px) {
+.slick-slide .button {
+    display: none!important;
+}
+.footer_cop, .footer_soc {
+    width: 100%;
+    text-align: left;
+}
+.tel_top_w {
+  width: 165px;
+}
+}
 
 
 
