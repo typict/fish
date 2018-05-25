@@ -807,8 +807,8 @@ body{font-family: "Roboto Condensed",'Roboto',sans-serif;}
 .dest_info h3 {position:relative;margin-bottom:25px;font-weight:bold; font-size:15px; text-transform:uppercase;}
 .dest_info:not(:last-child) {margin-bottom:53px;}
 .dest_info h3:before{content:'';position: absolute; left:0; top:50%; transform:translateY(-50%);}
-.address_info:before{background:url('../img2/f_addr.svg') no-repeat; width:25px;height:25px;}
-.contacts_info:before{background:url('../img2/f_cont.svg') no-repeat; width:29px;height:29px;}
+.address_info:before{background:url('../img2/f_addr.svg') no-repeat; width:25px;height:26px;}
+.contacts_info:before{background:url('../img2/f_cont.svg') no-repeat; width:29px;height:30px;}
 .departure_info:before{background:url('../img2/f_route.svg') no-repeat; width:26px;height:26px;}
 .dest_info:not(:last-of-type) h3+p {font-weight:bold;padding-bottom:13px;}
 .dest_info .dest {color:#3876e1;font-weight:bold;}
@@ -877,7 +877,7 @@ background: #e2ebf7;}
 .slide_tab {margin-bottom:90px;}
 .news_page.catalog_page .catalog .sportfishingpage_row.row {background-image:url('../img2/fishing_fish_2.png'); background-position:top 45% right -60px;}
 .news_page.catalog_page .sportfishing_catalog {background-image:url('../img2/fishing_fish_3.png');background-position:left -40px bottom 250px;}
-.news_page.catalog_page .sportfishing_catalog .catalog_wrap {background-image:url('../img2/fishing_fish_1.png');background-position: -20px 450px;}
+.news_page.catalog_page .sportfishing_catalog .catalog_wrap {background-image:/*url('../img2/fishing_fish_1.png')*/ url('../img2/sportfishing_fish_drop_1.png');background-position: -20px 350px;}
 @media (max-width:1325px) {
     .sportfishingpage_row .sportfishingpage_wrap{max-width:calc(100% - 30px);}
     .slide_tab, .test_slider_wrap {max-width:90%; margin: 0 auto 90px;}
@@ -918,6 +918,7 @@ background: #e2ebf7;}
 .test_slider_slide.active_test_slide .vil_wrap:before{border-color: #3a77e1;}
 .test_slider_slide.active_test_slide .vil_title {color: #3a77e1;}
 .test_slider_slide{cursor:pointer;}
+
 @media (max-width:1300px) {
     .test_slider {width:134%;}
     .test_slider div {width:33.3%;}
@@ -954,8 +955,93 @@ background: #e2ebf7;}
     .dest_info:not(:last-child) {margin-bottom:38px;}
     .sportfishingpage_wrap .button {color: #ffffff;font-weight: 700;text-transform: none;border: 1px solid #3876e1;margin-top: 45px;background:#3876e1;}
     .sportfishingpage_wrap .button:hover{background:#2c5999;transition: background-color .75s ease,color 105ms ease,opacity 45ms ease;}
+}
+
+/*24/05 additions by Lena*/
+
+.vehicle_block{margin-top:-70px;}
+@media (max-width:1850px) {
+    .vehicle_block{margin-top:0;}
+    .live_video_cont{margin-top:30px;}
+}
+@media (max-width:1250px) {
+    .live_video_cont{margin-top:0;}
+}
+.dest_info .dest, .dest_info{font-weight:400;}
+.dep_btn.btn:focus{outline:none !important;}
+.address_info:before{background:url('../img2/f_addr.svg') no-repeat; width:25px;height:26px;}
+.contacts_info:before{background:url('../img2/f_cont.svg') no-repeat; width:29px;height:30px;}
+.departure_info:before{background:url('../img2/f_route.svg') no-repeat; width:26px;height:26px;}
+@media (max-width:500px) {
+    .square_data_block {padding:15px 0 9px 11px;}
+    .square_data_block p {padding-left:32px;}
+    .square_data_block p:before{left:0;}
+}
+.vehicle_desc h3 {margin-bottom:25px;}
+@media (max-width:444px) {
+    .dest_info h3 {margin-bottom:13px;}
+    .slide_tab .slick-next{width:13px; height:20px;}
+    .sportfishingpage_row .sportfishingpage_wrap {max-width:100%;margin:0;}
+    .slide_tab {max-width:85%;}
+    .slide_tab .slick-prev {left:-30px;}
+    .slide_tab .slick-next {right:-30px;}
+    .square_data_block p {font-size:13px;}
+    .vehicle{margin-bottom:22px;}
+    .dep_btn, .vehicle_desc{font-size:16px;}
+    .sportfishingpage_wrap .button{margin-top:0;background:white;color:#3876e1; font-size:16px;}
+    .vehicle_desc h3{margin-bottom:20px;}
+    .sportfishingpage_wrap .departure_input {padding:10px 21px;}
+    .dep_btn{padding-top:13px; padding-bottom:13px;}
+    .vehicle_cont {padding:30px 12px;}
+    .sportfishingpage_wrap .button {padding-top:12px; padding-bottom:12px;}
+    .rules p:first-child{margin-bottom:30px;}
 
 }
+
+@media (max-width:342px) {
+    .sportfishingpage_wrap .button, .vehicle_desc{font-size:15px;}
+
+}
+@media (max-width:330px) {
+    .vehicle_desc{font-size:14px;}
+}
+@media (max-width:327px) {
+    .sportfishingpage_wrap .title{font-size:23px;}
+}
+
+@media (max-width:320px) {
+    .dest_info.dest_title p.dest{padding-left:58px;}
+}
+.news_page.catalog_page .sportfishing_catalog .catalog_wrap {background-image:/*url('../img2/fishing_fish_1.png')*/ url('../img2/sportfishing_fish_drop_1.png');background-position: -20px 350px; background-repeat:no-repeat;}
+.news_page.catalog_page .catalog .sportfishingpage_row.row {background-image:url('../img2/fishing_bg_drop_2_vers2.png'); background-position:top 20% right -10px;background-repeat:no-repeat;}
+.spf_cont {background-image:url('../img2/bubbles.png'); background-position:left 0 bottom 620px;background-repeat:no-repeat;}
+@media (max-width:1450px) {
+    .news_page.catalog_page .catalog .sportfishingpage_row.row {background-position:top 15% right -80px;}
+}
+@media (max-width:1325px) {
+    .news_page.catalog_page .sportfishing_catalog .catalog_wrap {background-position: -80px 350px; background-repeat:no-repeat;}
+    .news_page.catalog_page .catalog .sportfishingpage_row.row {background:none !important;}
+}
+@media (max-width:804px) {
+    .news_page.catalog_page .sportfishing_catalog .catalog_wrap {background:none !important;}
+    .spf_cont{background:none;}
+}
+.footer_soc .fb:hover{background-image:url('../img2/fb_hover.png');}
+.footer_soc .in:hover{background-image:url('../img2/instagram_hover.png');}
+.footer_soc .tv:hover{background-image:url('../img2/telegram_hover.png');}
+/*end of additions by Lena*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
