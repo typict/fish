@@ -33,11 +33,19 @@ $(function () {
 
 
     $('.card_page .card_form [type="text"]').on('input', function () {
-        var $th = $(this); $th.val($th.val().replace(/[^0-9,]/g, ''))}
-        );
+        let $th = $(this);
+      /*let val = $th.val().replace(/[^\d+\.,]/g, '');
+      val=val.replace(/,/g, '.');*/
+      $th.val($th.val().replace(/[^0-9,.]/g, '').replace(/,/g, '.'));
+      /*$th.val(val);*/
+      console.log($th.val());
+    });
+
+
+    //default value
+    $('.calc_value').text(parseFloat($('.card_form [name="quantity"]').attr('data-min'))*parseInt($('.blue_title').text())+' грн');
 
     $('body').on('click', '.incr,.decr', function () {
-
         let val = $(this).parent('label').find('input').val()===''?0.5:+parseFloat($(this).parent('label').find('input').val());
         if ($(this).is('.decr')) {
             val-=0.5;
@@ -45,8 +53,17 @@ $(function () {
             val+=0.5;
         }
         if (val<0.5) {return;}
+        console.log(val);
         $(this).parent('label').find('input').val(val+' кг');
         $(this).parent('label').find('input').attr('value',val);
+        $(this).parent('label').find('input').trigger('change');
+    });
+
+    $('body').on('change','.card_form [name="quantity"]',function(){
+      console.log('change triggered');
+      let val = parseFloat($(this).val());
+      console.log(val);
+      $('.calc_value').text(val*parseInt($('.blue_title').text())+' грн');
     });
 
     $(document).ready(function(){

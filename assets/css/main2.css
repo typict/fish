@@ -1031,6 +1031,53 @@ background: #e2ebf7;}
 .footer_soc .tv:hover{background-image:url('../img2/telegram_hover.png');}
 /*end of additions by Lena*/
 
+/*additions by Lena, svg icons fix*/
+.square_data_block p:before {width:28px; height:28px;}
+.contact_item_title {margin-top:20px;}
+/*.slide_tab .slick-prev, .slide_tab .slick-next{width:80px; height:80px;}
+.slide_tab .slick-prev:before, .slide_tab .slick-next:before{width:80px; height:80px; position:absolute; left:-10px; top:25px;background-image:url('../../html/img/arrow_left.svg');}
+.slide_tab .slick-next:before{background-image:url('../../html/img/arrow_right.svg'); right:-40px; left:auto;}
+@media (max-width:1167px) {
+
+}
+@media (max-width:444px) {
+    .vil_title{font-size:16px;}
+    .slide_tab .slick-prev, .slide_tab .slick_next{width:13px; height:20px;}
+    .slide_tab .slick-prev:before, .slide_tab .slick-next:before{width:13px; height:20px;}
+    .slide_tab .slick-prev:before{background-image:url('../img2/sp_mob_arr_left.png');}
+    .slide_tab .slick-next:before{background-image:url('../img2/sp_mob_arr_right.png');}
+}*/
+/*.slide_tab .slick-prev, .slide_tab .slick-next*/
+.how_contacts_item.phone img {width:30%; height:70px;}
+.how_wait {padding-top:25px;}
+.how_wait i {display:block;width:100px; height:100px; margin: 0 auto 25px; border-radius:50%; background:#3876e1; background-image:url('../../html/img/how_deliver2.svg'); background-repeat:no-repeat; background-position:50%; background-size:70%;}
+.graph_items li:before {background-repeat:no-repeat;background-size:120%;}
+.news_page_date:before{background: url(../../html/img/cal_date.svg) no-repeat center center; width:19px; height:18px;}
+.warning_text_block:before{width:44px; height:44px; background:url(../../html/img/warning_sign.svg) no-repeat center center; }
+.news_item_data:before{background-repeat:no-repeat;}
+.catalog_page aside>ul>li span.frying:before {background: url(../../html/img/zarybok.svg) no-repeat left top;}
+.catalog_page aside>ul>li span.cold_fish:before {background: url(../../html/img/cold.svg) no-repeat left top;}
+.catalog_page aside>ul>li span.dishes:before {width: 22px;height: 22px;background: url(../../html/img/dishes.svg) no-repeat left top;}
+.departure_info:before {background: url(../img2/f_route.svg) no-repeat center center;width: 28px; height: 28px;}
+@media (max-width:1406px) {
+    .test_zoom {max-width:90%;margin:0 auto 50px;}
+}
+
+/*calc*/
+.value_title, .calc_value{margin-left:10px; font-size:18px;}
+@media (max-width:960px) {
+    .value_wrap{display:block; padding-top:10px;}
+    .value_title{margin-left:0;}
+}
+
+
+
+
+
+
+
+
+
 
 
 
