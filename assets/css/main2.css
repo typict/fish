@@ -1063,6 +1063,15 @@ background: #e2ebf7;}
     .test_zoom {max-width:90%;margin:0 auto 50px;}
 }
 
+/*calc*/
+.value_title, .calc_value{margin-left:10px; font-size:18px;}
+@media (max-width:960px) {
+    .value_wrap{display:block; padding-top:10px;}
+    .value_title{margin-left:0;}
+}
+
+
+
 
 
 
