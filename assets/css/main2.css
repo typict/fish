@@ -1077,6 +1077,13 @@ background: #e2ebf7;}
 .graph_items li:before {display:none;}
 .graph_items .graph_item_icon{position: absolute;left: 0;top: 0;}
 
+.vil_wrap:before{display:none;}
+.vil_circle{position:absolute; left:50%; top:0; transform:translateX(-50%); width:143px; height:143px; border-radius:50%; border:1px solid transparent;background: #e2ebf7;}
+.vil_circle img{position:absolute;left:50%; top:50%; transform:translate(-50%,-50%);}
+
+
+
+
 
 
 
