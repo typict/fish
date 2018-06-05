@@ -1070,6 +1070,21 @@ background: #e2ebf7;}
     .value_title{margin-left:0;}
 }
 
+/*icons fix 2*/
+.catalog_page aside>ul>li span:before {display:none;}
+.catalog_page aside>ul>li img {position:absolute;content: '';left:-37px;top:50%;transform:translateY(-50%);}
+.graph_items li {position:relative;}
+.graph_items li:before {display:none;}
+.graph_items .graph_item_icon{position: absolute;left: 0;top: 0;}
+
+
+
+
+
+
+
+
+
 
 
 
