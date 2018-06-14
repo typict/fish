@@ -32,7 +32,7 @@ $(function () {
 
 
     /*range calc block*/
-
+  if ($('.card_page').length) {
     $('.card_page .card_form [type="text"]').on('input', function () {
       let $th = $(this);
       $th.val($th.val().replace(/[^0-9,.]/g, '').replace(/,/g, '.'));
@@ -45,30 +45,30 @@ $(function () {
     $('.calc_value').text(parseFloat(defaultRange[0])*price+'-'+parseFloat(defaultRange[1])*price+' грн');
 
     $('body').on('click', '.incr,.decr', function () {
-        let val = $(this).parent('label').find('input').val()===''?"0.5-1.0":$(this).parent('label').find('input').val();
+      let val = $(this).parent('label').find('input').val()===''?"0.5-1.0":$(this).parent('label').find('input').val();
 
-        val = val.split('-');
-        var nmbArray = val.map(function(el){
-          return parseFloat(el);
+      val = val.split('-');
+      var nmbArray = val.map(function(el){
+        return parseFloat(el);
+      });
+      var decrArr, incrArr;
+      if ($(this).is('.decr')) {
+        decrArr = nmbArray.map(function(el){
+          return String(el-=0.5);
         });
-        var decrArr, incrArr;
-        if ($(this).is('.decr')) {
-          decrArr = nmbArray.map(function(el){
-            return String(el-=0.5);
-          });
-          decrArr= decrArr.join('-');
-        } else {
-            incrArr = nmbArray.map(function(el){
-              return String(el+=0.5);
-            });
-            incrArr = incrArr.join('-');
-        }
+        decrArr= decrArr.join('-');
+      } else {
+        incrArr = nmbArray.map(function(el){
+          return String(el+=0.5);
+        });
+        incrArr = incrArr.join('-');
+      }
 
-        val=decrArr?decrArr:incrArr;
-        if(val==='0-0.5'){return false;}
-        $(this).parent('label').find('input').val(val+' кг');
-        $(this).parent('label').find('input').attr('value',val);
-        $(this).parent('label').find('input').trigger('change');
+      val=decrArr?decrArr:incrArr;
+      if(val==='0-0.5'){return false;}
+      $(this).parent('label').find('input').val(val+' кг');
+      $(this).parent('label').find('input').attr('value',val);
+      $(this).parent('label').find('input').trigger('change');
     });
 
     $('body').on('change','.card_form [name="quantity"]',function(){
@@ -101,6 +101,7 @@ $(function () {
       });
       $('.calc_value').text(finalarr[0]+'-'+finalarr[1]+' грн');
     });
+  }
 
     /*end of range calc block*/
 
