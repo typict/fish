@@ -31,29 +31,41 @@ $(function () {
     });
 
 
+    /*range calc block*/
 
     $('.card_page .card_form [type="text"]').on('input', function () {
-        let $th = $(this);
-      /*let val = $th.val().replace(/[^\d+\.,]/g, '');
-      val=val.replace(/,/g, '.');*/
+      let $th = $(this);
       $th.val($th.val().replace(/[^0-9,.]/g, '').replace(/,/g, '.'));
-      /*$th.val(val);*/
-      console.log($th.val());
     });
 
-
     //default value
-    $('.calc_value').text(parseFloat($('.card_form [name="quantity"]').attr('data-min'))*parseInt($('.blue_title').text())+' грн');
+    var price = parseInt($('.blue_title').text());
+    var defaultRange=$('.card_form [name="quantity"]').attr('data-min');
+    defaultRange= defaultRange.split('-');
+    $('.calc_value').text(parseFloat(defaultRange[0])*price+'-'+parseFloat(defaultRange[1])*price+' грн');
 
     $('body').on('click', '.incr,.decr', function () {
-        let val = $(this).parent('label').find('input').val()===''?0.5:+parseFloat($(this).parent('label').find('input').val());
+        let val = $(this).parent('label').find('input').val()===''?"0.5-1.0":$(this).parent('label').find('input').val();
+
+        val = val.split('-');
+        var nmbArray = val.map(function(el){
+          return parseFloat(el);
+        });
+        var decrArr, incrArr;
         if ($(this).is('.decr')) {
-            val-=0.5;
+          decrArr = nmbArray.map(function(el){
+            return String(el-=0.5);
+          });
+          decrArr= decrArr.join('-');
         } else {
-            val+=0.5;
+            incrArr = nmbArray.map(function(el){
+              return String(el+=0.5);
+            });
+            incrArr = incrArr.join('-');
         }
-        if (val<0.5) {return;}
-        console.log(val);
+
+        val=decrArr?decrArr:incrArr;
+        if(val==='0-0.5'){return false;}
         $(this).parent('label').find('input').val(val+' кг');
         $(this).parent('label').find('input').attr('value',val);
         $(this).parent('label').find('input').trigger('change');
@@ -61,10 +73,36 @@ $(function () {
 
     $('body').on('change','.card_form [name="quantity"]',function(){
       console.log('change triggered');
-      let val = parseFloat($(this).val());
-      console.log(val);
-      $('.calc_value').text(val*parseInt($('.blue_title').text())+' грн');
+      let val = $(this).val();
+
+      //keyboard input range validation*/
+      var prelimVal,newVal;
+      if(val.indexOf('-')===-1) {
+        if(val==='') {
+          $(this).val('0.5-1 кг');
+          val='0.5-1 кг';
+        } else {
+          prelimVal=parseFloat(val)+0.5;
+          newVal=val+'-'+String(prelimVal)+' кг';
+          val = newVal;
+          $('.card_form [name="quantity"]').val(val);
+        }
+      }
+      //
+
+      var newstr,newarr,finalarr;
+      newstr = val.replace(/[^0-9,.-]/g, '');
+      newstr = newstr.split('-');
+      newarr = newstr.map(function(el){
+        return parseFloat(el);
+      });
+      finalarr= newarr.map(function(el){
+        return (el*price).toFixed(2);
+      });
+      $('.calc_value').text(finalarr[0]+'-'+finalarr[1]+' грн');
     });
+
+    /*end of range calc block*/
 
     $(document).ready(function(){
         $(".test_zoom").slick({
