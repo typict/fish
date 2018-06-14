@@ -1083,6 +1083,37 @@ background: #e2ebf7;}
 
 .main_price{font-weight:bold;}
 
+/*tooltips*/
+@-webkit-keyframes blinking {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blinking{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes blinking{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes blinking{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+.info_sign_tooltip_block{display:none;position:absolute;top:100%; right:0; width:250px; height:70px; padding:5px;box-sizing:border-box; border:1px solid orange; background:white; z-index:5; border-radius:5px;overflow:hidden; box-shadow:2px 2px 20px 0 rgba(0,0,0,0.3);}
+.info_sign_cont {display:inline-block;position:relative;top:2px;width:16px; height:16px;border-radius:50%; background:orange;cursor:pointer;
+    -webkit-animation:blinking 2s infinite;  -moz-animation:blinking 2s infinite;  -o-animation:blinking 2ms infinite; animation:blinking 2s infinite;
+}
+.info_sign_cont .i_sign {position:absolute;left:50%; top:50%; transform:translate(-50%,-50%);color:white;}
+.calc_value{margin-right:5px;}
+.info_sign_cont:hover .info_sign_tooltip_block{display:block;}
+.info_sign_cont:hover{animation:none !important;}
+
+
+
+
+
+
 
 
 
