@@ -1081,6 +1081,8 @@ background: #e2ebf7;}
 .vil_circle{position:absolute; left:50%; top:0; transform:translateX(-50%); width:143px; height:143px; border-radius:50%; border:1px solid transparent;background: #e2ebf7;}
 .vil_circle img{position:absolute;left:50%; top:50%; transform:translate(-50%,-50%);}
 
+.main_price{font-weight:bold;}
+
 
 
 

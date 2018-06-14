@@ -42,7 +42,7 @@ $(function () {
     var price = parseInt($('.blue_title').text());
     var defaultRange=$('.card_form [name="quantity"]').attr('data-min');
     defaultRange= defaultRange.split('-');
-    $('.calc_value').text(parseFloat(defaultRange[0])*price+'-'+parseFloat(defaultRange[1])*price+' грн');
+    $('.calc_value').html('<span>'+parseFloat(defaultRange[0])*price+'-'+'<span class="main_price">'+parseFloat(defaultRange[1])*price+'</span>'+' грн</span>');
 
     $('body').on('click', '.incr,.decr', function () {
       let val = $(this).parent('label').find('input').val()===''?"0.5-1.0":$(this).parent('label').find('input').val();
@@ -99,7 +99,7 @@ $(function () {
       finalarr= newarr.map(function(el){
         return (el*price).toFixed(2);
       });
-      $('.calc_value').text(finalarr[0]+'-'+finalarr[1]+' грн');
+      $('.calc_value').html('<span>'+finalarr[0]+'-<span class="main_price">'+finalarr[1]+'</span> грн</span>');
     });
   }
 
