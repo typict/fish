@@ -247,16 +247,116 @@ $(function () {
      $(this).addClass('active_test_slide');
  });*/
 
+  let bodyWidth1, bodyWidth2, deltaWidth;
+  /*popup*/
+  $('.our_serv_item').on('click',function(e){
+    e.preventDefault();
+    console.log('click');
+    let parent = !$(e.target).parents('.our_serv_item').length?$(e.target):$(e.target).parents('.our_serv_item').eq(0);
+    let id = parent.attr('id');
+    $('.application_popup_overlay, .application_popup').fadeIn();
+    $('.application_popup').attr('data-id', id);
+    $('.warning_desc, .email_warning').remove();
+    $('input.warning').removeClass('warning');
+    $('.application_popup form').find('input').not('[type="hidden"], [type="submit"]').val('');
+    bodyWidth1 = $('body').width();
+    console.log(bodyWidth1);
+    $('body').css('overflow','hidden');
+    bodyWidth2 = $('body').width();
+    console.log(bodyWidth2);
+    deltaWidth = bodyWidth2 - bodyWidth1;
+    console.log(deltaWidth);
+    $('body').css({'padding-right':deltaWidth+'px'});
+  });
 
+  $('.application_popup_overlay, .delete_item').on('click',function(){
+    $('body').css({'padding-right':'', 'overflow':'auto'});
+    $('.application_popup, .application_popup_overlay').fadeOut();
+  });
 
+  $(document).on('keyup', 'body', function (e) {if (e.which == 27) { $('.application_popup_overlay, .application_popup').fadeOut();}});
 
+  $('.application_popup [name="phone"]').on('input', function () {
+    let $th = $(this);
+    $th.val($th.val().replace(/[^0-9,.]/g, ''));
+  });
 
+  /*validation with email*/
+  /*$('.trigger_submit').on('click', function(){
+    var flag=true;
+    var a = false;
+    var b = true;
+    $(this).parents('form').find('input[type="text"],input[type="email"]').each(function(){
+      if ($(this).val()!==''&&$(this).is('.warning')) {$(this).removeClass('warning')} else
+      if($(this).val()==='') {
+        $(this).addClass('warning');
+        flag=false;
+        b=false;
+      }
+    });
 
+    $(this).parents('form').find('input[name="email"]').each(function(){
+      if($(this).val().match(/\w+\@[a-z-]+\.[a-z]+/)==null) {
+        flag=false;
+        a = true;
+      } else {a=false;}
+    });
 
+    if (!flag) {
+      $(this).parents('form').find('.warning_desc').remove();
+      if (!(b==true&&a==true)) {
+        $(this).before('<p class="warning_desc">Для відправки форми необхідно заповнити виділені поля!</p>');
+      }
+      $(this).parents('form').find('.email_warning').remove();
+      if(a) {
+        $(this).before('<p class="email_warning">Необхідно вказати коректний email!</p>');
+      }
+      return false;
+    } else {
+      $(this).parents('form').find('.warning_desc').remove();
+      $(this).parents('form').find('.email_warning').remove();
+      var btn = $(this);
+     //ajaxSubmit();
+      $('.application_popup, .application_popup_overlay').hide();
+      return false;
+    }
 
+  });*/
 
-
-
+  /*validation without email*/
+  $('.trigger_submit').on('click', function(e){
+    e.preventDefault();
+    var flag=true;
+    $(this).parents('form').find('input').not('[type="email"],[type="hidden"], [name="description"]').each(function(){
+      if ($(this).val()!==''&&$(this).is('.warning')) {$(this).removeClass('warning')} else if($(this).val()==='') {$(this).addClass('warning'); flag=false;}
+    });
+    if (!flag) {
+      $(this).parents('form').find('.warning_desc').remove();
+      $(this).before('<p class="warning_desc">Для відправки форми необхідно заповнити виділені поля!</p>');
+      return false;
+    } else {
+      $(this).parents('form').find('.warning_desc').remove();
+      $('.application_popup, .application_popup_overlay').hide();
+      let btn = $(this);
+      var form = btn.parents('form').eq(0);
+      let id = $(this).parents('.application_popup').attr('data-id');
+      console.log('id',id);
+      console.log(form.serialize()+'&category_id='+id);
+      ajaxSubmit(id);
+      function ajaxSubmit(id) {
+        $.ajax({
+          type: "POST",
+          url: "http://riverfish.com.ua/service_request",
+          data: form.serialize()+'&id='+id,
+          success: function (data) {
+            console.log('ajax OK!');
+            console.log(JSON.parse(data));
+          }
+        });
+      }
+      return false;
+    }
+  });
 
 
 });
